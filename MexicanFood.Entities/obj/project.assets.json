@@ -176,28 +176,30 @@
     ]
   },
   "packageFolders": {
-    "/Users/Mape/.nuget/packages/": {},
-    "/usr/local/share/dotnet/sdk/NuGetFallbackFolder": {}
+    "C:\\Users\\Elisabeth\\.nuget\\packages\\": {},
+    "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder": {}
   },
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "/Users/Mape/GitClonePath/MexicanFoodBackend/MexicanFood.Entities/MexicanFood.Entities.csproj",
+      "projectUniqueName": "C:\\Users\\Elisabeth\\source\\repos\\MexicanFoodBackend\\MexicanFood.Entities\\MexicanFood.Entities.csproj",
       "projectName": "MexicanFood.Entities",
-      "projectPath": "/Users/Mape/GitClonePath/MexicanFoodBackend/MexicanFood.Entities/MexicanFood.Entities.csproj",
-      "packagesPath": "/Users/Mape/.nuget/packages/",
-      "outputPath": "/Users/Mape/GitClonePath/MexicanFoodBackend/MexicanFood.Entities/obj/",
+      "projectPath": "C:\\Users\\Elisabeth\\source\\repos\\MexicanFoodBackend\\MexicanFood.Entities\\MexicanFood.Entities.csproj",
+      "packagesPath": "C:\\Users\\Elisabeth\\.nuget\\packages\\",
+      "outputPath": "C:\\Users\\Elisabeth\\source\\repos\\MexicanFoodBackend\\MexicanFood.Entities\\obj\\",
       "projectStyle": "PackageReference",
       "fallbackFolders": [
-        "/usr/local/share/dotnet/sdk/NuGetFallbackFolder"
+        "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder"
       ],
       "configFilePaths": [
-        "/Users/Mape/.config/NuGet/NuGet.Config"
+        "C:\\Users\\Elisabeth\\AppData\\Roaming\\NuGet\\NuGet.Config",
+        "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
       ],
       "originalTargetFrameworks": [
         "netstandard2.0"
       ],
       "sources": {
+        "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
         "https://api.nuget.org/v3/index.json": {}
       },
       "frameworks": {

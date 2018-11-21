@@ -1,6 +1,8 @@
+using MexicanFood.Core.DomainService;
+
 namespace MexicanFood.Infrastructure.Data.Repositories
 {
-	public class UserRepository
+	public class UserRepository : IUserRepository
 	{
 		
 	}
