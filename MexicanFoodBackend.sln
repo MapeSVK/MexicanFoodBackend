@@ -1,0 +1,46 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Core", "Core", "{EFE28525-CE07-43E2-BE9A-5E4934986589}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "MexicanFood.Core", "MexicanFood.Core\MexicanFood.Core.csproj", "{206CD14A-9F0C-4F2D-AFD7-56C2044C56D8}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "MexicanFood.Entities", "MexicanFood.Entities\MexicanFood.Entities.csproj", "{0D00EF07-76D4-4562-BCC3-83D681DC51C3}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Infrastructure", "Infrastructure", "{7ED5C5B8-BAF2-4D75-A9D5-123DDC6D13BA}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "MexicanFood.Infrastructure.Data", "MexicanFood.Infrastructure.Data\MexicanFood.Infrastructure.Data.csproj", "{86CCA7FA-436D-45DE-B14D-2855975AA7B4}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "UI", "UI", "{CB68787E-1D92-41F1-84C2-6AD72DDF189C}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "MexicanFood.RestApi", "MexicanFood.RestApi\MexicanFood.RestApi.csproj", "{2BBB8D22-E310-4118-95A5-215324C8E8E2}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{206CD14A-9F0C-4F2D-AFD7-56C2044C56D8}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{206CD14A-9F0C-4F2D-AFD7-56C2044C56D8}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{206CD14A-9F0C-4F2D-AFD7-56C2044C56D8}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{206CD14A-9F0C-4F2D-AFD7-56C2044C56D8}.Release|Any CPU.Build.0 = Release|Any CPU
+		{0D00EF07-76D4-4562-BCC3-83D681DC51C3}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{0D00EF07-76D4-4562-BCC3-83D681DC51C3}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{0D00EF07-76D4-4562-BCC3-83D681DC51C3}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{0D00EF07-76D4-4562-BCC3-83D681DC51C3}.Release|Any CPU.Build.0 = Release|Any CPU
+		{86CCA7FA-436D-45DE-B14D-2855975AA7B4}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{86CCA7FA-436D-45DE-B14D-2855975AA7B4}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{86CCA7FA-436D-45DE-B14D-2855975AA7B4}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{86CCA7FA-436D-45DE-B14D-2855975AA7B4}.Release|Any CPU.Build.0 = Release|Any CPU
+		{2BBB8D22-E310-4118-95A5-215324C8E8E2}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{2BBB8D22-E310-4118-95A5-215324C8E8E2}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{2BBB8D22-E310-4118-95A5-215324C8E8E2}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{2BBB8D22-E310-4118-95A5-215324C8E8E2}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(NestedProjects) = preSolution
+		{206CD14A-9F0C-4F2D-AFD7-56C2044C56D8} = {EFE28525-CE07-43E2-BE9A-5E4934986589}
+		{0D00EF07-76D4-4562-BCC3-83D681DC51C3} = {EFE28525-CE07-43E2-BE9A-5E4934986589}
+		{86CCA7FA-436D-45DE-B14D-2855975AA7B4} = {7ED5C5B8-BAF2-4D75-A9D5-123DDC6D13BA}
+		{2BBB8D22-E310-4118-95A5-215324C8E8E2} = {CB68787E-1D92-41F1-84C2-6AD72DDF189C}
+	EndGlobalSection
+EndGlobal
