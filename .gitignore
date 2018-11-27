@@ -328,3 +328,10 @@ ASALocalRun/
 
 # MFractors (Xamarin productivity tool) working folder 
 .mfractor/
+.vs/MexicanFoodBackend/DesignTimeBuild/.dtbcache
+.vs/MexicanFoodBackend/DesignTimeBuild/.dtbcache
+.vs/MexicanFoodBackend/v15/.suo
+.vs/MexicanFoodBackend/v15/Server/sqlite3/storage.ide
+.vs/MexicanFoodBackend/v15/Server/sqlite3/storage.ide-wal
+MexicanFood.Core/obj/Debug/netstandard2.0/MexicanFood.Core.csproj.CoreCompileInputs.cache
+MexicanFood.Infrastructure.Data/obj/Debug/netcoreapp2.1/MexicanFood.Infrastructure.Data.csproj.CoreCompileInputs.cache
