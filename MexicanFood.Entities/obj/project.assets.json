@@ -182,9 +182,9 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\Elisabeth\\source\\repos\\MexicanFoodBackend\\MexicanFood.Entities\\MexicanFood.Entities.csproj",
-      "projectName": "MexicanFood.Entities",
-      "projectPath": "C:\\Users\\Elisabeth\\source\\repos\\MexicanFoodBackend\\MexicanFood.Entities\\MexicanFood.Entities.csproj",
+      "projectUniqueName": "C:\\Users\\Elisabeth\\source\\repos\\MexicanFoodBackend\\MexicanFood.Entities\\MexicanFood.Core.Entities.csproj",
+      "projectName": "MexicanFood.Core.Entities",
+      "projectPath": "C:\\Users\\Elisabeth\\source\\repos\\MexicanFoodBackend\\MexicanFood.Entities\\MexicanFood.Core.Entities.csproj",
       "packagesPath": "C:\\Users\\Elisabeth\\.nuget\\packages\\",
       "outputPath": "C:\\Users\\Elisabeth\\source\\repos\\MexicanFoodBackend\\MexicanFood.Entities\\obj\\",
       "projectStyle": "PackageReference",

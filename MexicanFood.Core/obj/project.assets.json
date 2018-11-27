@@ -26,14 +26,14 @@
           "build/netstandard2.0/NETStandard.Library.targets": {}
         }
       },
-      "MexicanFood.Entities/1.0.0": {
+      "MexicanFood.Core.Entities/1.0.0": {
         "type": "project",
         "framework": ".NETStandard,Version=v2.0",
         "compile": {
-          "bin/placeholder/MexicanFood.Entities.dll": {}
+          "bin/placeholder/MexicanFood.Core.Entities.dll": {}
         },
         "runtime": {
-          "bin/placeholder/MexicanFood.Entities.dll": {}
+          "bin/placeholder/MexicanFood.Core.Entities.dll": {}
         }
       }
     }
@@ -179,15 +179,15 @@
         "netstandard.library.nuspec"
       ]
     },
-    "MexicanFood.Entities/1.0.0": {
+    "MexicanFood.Core.Entities/1.0.0": {
       "type": "project",
-      "path": "../MexicanFood.Entities/MexicanFood.Entities.csproj",
-      "msbuildProject": "../MexicanFood.Entities/MexicanFood.Entities.csproj"
+      "path": "../MexicanFood.Entities/MexicanFood.Core.Entities.csproj",
+      "msbuildProject": "../MexicanFood.Entities/MexicanFood.Core.Entities.csproj"
     }
   },
   "projectFileDependencyGroups": {
     ".NETStandard,Version=v2.0": [
-      "MexicanFood.Entities >= 1.0.0",
+      "MexicanFood.Core.Entities >= 1.0.0",
       "NETStandard.Library >= 2.0.3"
     ]
   },
@@ -221,8 +221,8 @@
       "frameworks": {
         "netstandard2.0": {
           "projectReferences": {
-            "C:\\Users\\Elisabeth\\source\\repos\\MexicanFoodBackend\\MexicanFood.Entities\\MexicanFood.Entities.csproj": {
-              "projectPath": "C:\\Users\\Elisabeth\\source\\repos\\MexicanFoodBackend\\MexicanFood.Entities\\MexicanFood.Entities.csproj"
+            "C:\\Users\\Elisabeth\\source\\repos\\MexicanFoodBackend\\MexicanFood.Entities\\MexicanFood.Core.Entities.csproj": {
+              "projectPath": "C:\\Users\\Elisabeth\\source\\repos\\MexicanFoodBackend\\MexicanFood.Entities\\MexicanFood.Core.Entities.csproj"
             }
           }
         }

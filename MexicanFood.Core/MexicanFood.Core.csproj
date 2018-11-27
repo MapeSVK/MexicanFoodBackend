@@ -5,7 +5,7 @@
     </PropertyGroup>
 
     <ItemGroup>
-      <ProjectReference Include="..\MexicanFood.Entities\MexicanFood.Entities.csproj" />
+      <ProjectReference Include="..\MexicanFood.Entities\MexicanFood.Core.Entities.csproj" />
     </ItemGroup>
 
 </Project>

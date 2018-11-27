@@ -212,7 +212,7 @@
         "type": "project",
         "framework": ".NETStandard,Version=v2.0",
         "dependencies": {
-          "MexicanFood.Entities": "1.0.0"
+          "MexicanFood.Core.Entities": "1.0.0"
         },
         "compile": {
           "bin/placeholder/MexicanFood.Core.dll": {}
@@ -221,14 +221,14 @@
           "bin/placeholder/MexicanFood.Core.dll": {}
         }
       },
-      "MexicanFood.Entities/1.0.0": {
+      "MexicanFood.Core.Entities/1.0.0": {
         "type": "project",
         "framework": ".NETStandard,Version=v2.0",
         "compile": {
-          "bin/placeholder/MexicanFood.Entities.dll": {}
+          "bin/placeholder/MexicanFood.Core.Entities.dll": {}
         },
         "runtime": {
-          "bin/placeholder/MexicanFood.Entities.dll": {}
+          "bin/placeholder/MexicanFood.Core.Entities.dll": {}
         }
       }
     }
@@ -702,16 +702,16 @@
       "path": "../MexicanFood.Core/MexicanFood.Core.csproj",
       "msbuildProject": "../MexicanFood.Core/MexicanFood.Core.csproj"
     },
-    "MexicanFood.Entities/1.0.0": {
+    "MexicanFood.Core.Entities/1.0.0": {
       "type": "project",
-      "path": "../MexicanFood.Entities/MexicanFood.Entities.csproj",
-      "msbuildProject": "../MexicanFood.Entities/MexicanFood.Entities.csproj"
+      "path": "../MexicanFood.Entities/MexicanFood.Core.Entities.csproj",
+      "msbuildProject": "../MexicanFood.Entities/MexicanFood.Core.Entities.csproj"
     }
   },
   "projectFileDependencyGroups": {
     ".NETCoreApp,Version=v2.1": [
       "MexicanFood.Core >= 1.0.0",
-      "MexicanFood.Entities >= 1.0.0",
+      "MexicanFood.Core.Entities >= 1.0.0",
       "Microsoft.NETCore.App >= 2.1.0"
     ]
   },
@@ -748,8 +748,8 @@
             "C:\\Users\\Elisabeth\\source\\repos\\MexicanFoodBackend\\MexicanFood.Core\\MexicanFood.Core.csproj": {
               "projectPath": "C:\\Users\\Elisabeth\\source\\repos\\MexicanFoodBackend\\MexicanFood.Core\\MexicanFood.Core.csproj"
             },
-            "C:\\Users\\Elisabeth\\source\\repos\\MexicanFoodBackend\\MexicanFood.Entities\\MexicanFood.Entities.csproj": {
-              "projectPath": "C:\\Users\\Elisabeth\\source\\repos\\MexicanFoodBackend\\MexicanFood.Entities\\MexicanFood.Entities.csproj"
+            "C:\\Users\\Elisabeth\\source\\repos\\MexicanFoodBackend\\MexicanFood.Entities\\MexicanFood.Core.Entities.csproj": {
+              "projectPath": "C:\\Users\\Elisabeth\\source\\repos\\MexicanFoodBackend\\MexicanFood.Entities\\MexicanFood.Core.Entities.csproj"
             }
           }
         }

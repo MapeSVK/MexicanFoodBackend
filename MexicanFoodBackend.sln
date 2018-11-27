@@ -7,7 +7,7 @@ Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Core", "Core", "{EFE28525-C
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "MexicanFood.Core", "MexicanFood.Core\MexicanFood.Core.csproj", "{206CD14A-9F0C-4F2D-AFD7-56C2044C56D8}"
 EndProject
-Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "MexicanFood.Entities", "MexicanFood.Entities\MexicanFood.Entities.csproj", "{0D00EF07-76D4-4562-BCC3-83D681DC51C3}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "MexicanFood.Core.Entities", "MexicanFood.Entities\MexicanFood.Core.Entities.csproj", "{0D00EF07-76D4-4562-BCC3-83D681DC51C3}"
 EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Infrastructure", "Infrastructure", "{7ED5C5B8-BAF2-4D75-A9D5-123DDC6D13BA}"
 EndProject
@@ -17,7 +17,7 @@ Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "UI", "UI", "{CB68787E-1D92-
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "MexicanFood.RestApi", "MexicanFood.RestApi\MexicanFood.RestApi.csproj", "{2BBB8D22-E310-4118-95A5-215324C8E8E2}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "MexicanFood.XUnitTest", "MexicanFood.XUnitTest\MexicanFood.XUnitTest.csproj", "{40A82B6F-A746-4A2F-9585-EF00581543C9}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "MexicanFood.XUnitTest", "MexicanFood.XUnitTest\MexicanFood.XUnitTest.csproj", "{40A82B6F-A746-4A2F-9585-EF00581543C9}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
