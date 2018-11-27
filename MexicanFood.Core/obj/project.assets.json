@@ -192,37 +192,35 @@
     ]
   },
   "packageFolders": {
-    "C:\\Users\\Elisabeth\\.nuget\\packages\\": {},
-    "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder": {}
+    "/Users/Mape/.nuget/packages/": {},
+    "/usr/local/share/dotnet/sdk/NuGetFallbackFolder": {}
   },
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\Elisabeth\\source\\repos\\MexicanFoodBackend\\MexicanFood.Core\\MexicanFood.Core.csproj",
+      "projectUniqueName": "/Users/Mape/GitClonePath/MexicanFoodBackend/MexicanFood.Core/MexicanFood.Core.csproj",
       "projectName": "MexicanFood.Core",
-      "projectPath": "C:\\Users\\Elisabeth\\source\\repos\\MexicanFoodBackend\\MexicanFood.Core\\MexicanFood.Core.csproj",
-      "packagesPath": "C:\\Users\\Elisabeth\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\Elisabeth\\source\\repos\\MexicanFoodBackend\\MexicanFood.Core\\obj\\",
+      "projectPath": "/Users/Mape/GitClonePath/MexicanFoodBackend/MexicanFood.Core/MexicanFood.Core.csproj",
+      "packagesPath": "/Users/Mape/.nuget/packages/",
+      "outputPath": "/Users/Mape/GitClonePath/MexicanFoodBackend/MexicanFood.Core/obj/",
       "projectStyle": "PackageReference",
       "fallbackFolders": [
-        "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder"
+        "/usr/local/share/dotnet/sdk/NuGetFallbackFolder"
       ],
       "configFilePaths": [
-        "C:\\Users\\Elisabeth\\AppData\\Roaming\\NuGet\\NuGet.Config",
-        "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
+        "/Users/Mape/.config/NuGet/NuGet.Config"
       ],
       "originalTargetFrameworks": [
         "netstandard2.0"
       ],
       "sources": {
-        "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
         "https://api.nuget.org/v3/index.json": {}
       },
       "frameworks": {
         "netstandard2.0": {
           "projectReferences": {
-            "C:\\Users\\Elisabeth\\source\\repos\\MexicanFoodBackend\\MexicanFood.Entities\\MexicanFood.Core.Entities.csproj": {
-              "projectPath": "C:\\Users\\Elisabeth\\source\\repos\\MexicanFoodBackend\\MexicanFood.Entities\\MexicanFood.Core.Entities.csproj"
+            "/Users/Mape/GitClonePath/MexicanFoodBackend/MexicanFood.Entities/MexicanFood.Core.Entities.csproj": {
+              "projectPath": "/Users/Mape/GitClonePath/MexicanFoodBackend/MexicanFood.Entities/MexicanFood.Core.Entities.csproj"
             }
           }
         }

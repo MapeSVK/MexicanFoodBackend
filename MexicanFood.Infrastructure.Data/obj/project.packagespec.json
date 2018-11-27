@@ -14,7 +14,14 @@
     ],
     "frameworks": {
       "netcoreapp2.1": {
-        "projectReferences": {}
+        "projectReferences": {
+          "/Users/Mape/GitClonePath/MexicanFoodBackend/MexicanFood.Core/MexicanFood.Core.csproj": {
+            "projectPath": "/Users/Mape/GitClonePath/MexicanFoodBackend/MexicanFood.Core/MexicanFood.Core.csproj"
+          },
+          "/Users/Mape/GitClonePath/MexicanFoodBackend/MexicanFood.Entities/MexicanFood.Core.Entities.csproj": {
+            "projectPath": "/Users/Mape/GitClonePath/MexicanFoodBackend/MexicanFood.Entities/MexicanFood.Core.Entities.csproj"
+          }
+        }
       }
     },
     "warningProperties": {
