@@ -5,6 +5,6 @@ namespace MexicanFood.Infrastructure.Data.Repositories
 {
 	public class UserRepository : IRepository<User>
 	{
-		
+		//travis test
 	}
 }
