@@ -4,4 +4,8 @@
         <TargetFramework>netstandard2.0</TargetFramework>
     </PropertyGroup>
 
+    <ItemGroup>
+      <ProjectReference Include="..\MexicanFood.Entities\MexicanFood.Core.Entities.csproj" />
+    </ItemGroup>
+
 </Project>

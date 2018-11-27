@@ -4,4 +4,9 @@
         <TargetFramework>netcoreapp2.1</TargetFramework>
     </PropertyGroup>
 
+    <ItemGroup>
+      <ProjectReference Include="..\MexicanFood.Core\MexicanFood.Core.csproj" />
+      <ProjectReference Include="..\MexicanFood.Entities\MexicanFood.Core.Entities.csproj" />
+    </ItemGroup>
+
 </Project>
