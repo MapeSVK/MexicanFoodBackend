@@ -23,10 +23,7 @@
     <option name="FILTER_BY_CURRENT_PROJECT" value="true" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="698a9472-8cbc-45d5-8200-ed1306d43462" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/.idea/.idea.MexicanFoodBackend/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.MexicanFoodBackend/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/MexicanFood.Infrastructure.Data/Repositories/UserRepository.cs" beforeDir="false" afterPath="$PROJECT_DIR$/MexicanFood.Infrastructure.Data/Repositories/UserRepository.cs" afterDir="false" />
-    </list>
+    <list default="true" id="698a9472-8cbc-45d5-8200-ed1306d43462" name="Default Changelist" comment="" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -66,41 +63,26 @@
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file pinned="false" current-in-tab="true">
+      <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/MexicanFood.Infrastructure.Data/Repositories/UserRepository.cs">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="105">
-              <caret line="7" column="21" selection-start-line="7" selection-start-column="21" selection-end-line="7" selection-end-column="21" />
+            <state relative-caret-position="150">
+              <caret line="10" selection-start-line="10" selection-end-line="10" />
               <folding>
-                <marker date="1543319878200" expanded="true" signature="6:65" ph="..." />
-                <marker date="1543319878200" expanded="true" signature="121:196" ph="{...}" />
-                <marker date="1543319878200" expanded="true" signature="172:194" ph="{...}" />
+                <marker date="1543401239633" expanded="true" signature="191:194" ph="{...}" />
+                <marker date="1543401239633" expanded="true" signature="191:196" ph="{...}" />
               </folding>
             </state>
           </provider>
         </entry>
       </file>
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/MexicanFood.Core/DomainService/IRepository.cs">
+        <entry file="file://$PROJECT_DIR$/MexicanFood.Core/ApplicationService/IUserService.cs">
           <provider selected="true" editor-type-id="text-editor">
             <state>
               <folding>
-                <marker date="1543317425093" expanded="false" signature="6:66" ph="..." />
-                <marker date="1543317425093" expanded="true" signature="108:161" ph="{...}" />
-                <marker date="1543317425093" expanded="true" signature="146:159" ph="{...}" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/MexicanFood.Entities/User.cs">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="60">
-              <caret line="4" column="8" selection-start-line="4" selection-start-column="8" selection-end-line="4" selection-end-column="8" />
-              <folding>
-                <marker date="1543317762649" expanded="true" signature="30:188" ph="{...}" />
-                <marker date="1543317762649" expanded="true" signature="51:186" ph="{...}" />
+                <marker date="1542802598389" expanded="true" signature="45:89" ph="{...}" />
+                <marker date="1542802598389" expanded="true" signature="78:87" ph="{...}" />
               </folding>
             </state>
           </provider>
@@ -109,39 +91,91 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/MexicanFood.Core/ApplicationService/Implementation/UserService.cs">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="60">
-              <caret line="4" column="8" selection-start-line="4" selection-start-column="8" selection-end-line="4" selection-end-column="8" />
+            <state>
+              <folding>
+                <marker date="1543311955709" expanded="true" signature="60:113" ph="{...}" />
+                <marker date="1543311955709" expanded="true" signature="102:111" ph="{...}" />
+              </folding>
             </state>
           </provider>
         </entry>
       </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/MexicanFood.Core/ApplicationService/IUserService.cs">
+      <file pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/MexicanFood.RestApi/Controllers/UsersController.cs">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="60">
-              <caret line="4" column="8" selection-start-line="4" selection-start-column="8" selection-end-line="4" selection-end-column="8" />
+            <state>
               <folding>
-                <marker date="1542802120075" expanded="true" signature="45:89" ph="{...}" />
-                <marker date="1542802120075" expanded="true" signature="78:87" ph="{...}" />
+                <marker date="1542802598532" expanded="false" signature="6:128" ph="..." />
+                <marker date="1542802598532" expanded="true" signature="171:795" ph="{...}" />
+                <marker date="1542802598532" expanded="true" signature="266:793" ph="{...}" />
+                <marker date="1542802598532" expanded="true" signature="350:403" ph="{...}" />
+                <marker date="1542802598532" expanded="true" signature="488:515" ph="{...}" />
+                <marker date="1542802598532" expanded="true" signature="594:602" ph="{...}" />
+                <marker date="1542802598532" expanded="true" signature="696:704" ph="{...}" />
+                <marker date="1542802598532" expanded="true" signature="782:790" ph="{...}" />
               </folding>
             </state>
           </provider>
         </entry>
       </file>
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/MexicanFood.RestApi/Controllers/UsersController.cs">
+        <entry file="file://$PROJECT_DIR$/MexicanFood.Core/ApplicationService/Implementation/OrderService.cs">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="360">
-              <caret line="28" column="49" selection-start-line="28" selection-start-column="49" selection-end-line="28" selection-end-column="49" />
+            <state>
               <folding>
-                <marker date="1542802199654" expanded="false" signature="6:128" ph="..." />
-                <marker date="1542802199654" expanded="true" signature="171:795" ph="{...}" />
-                <marker date="1542802199654" expanded="true" signature="266:793" ph="{...}" />
-                <marker date="1542802199654" expanded="true" signature="350:403" ph="{...}" />
-                <marker date="1542802199654" expanded="true" signature="488:515" ph="{...}" />
-                <marker date="1542802199654" expanded="true" signature="594:602" ph="{...}" />
-                <marker date="1542802199654" expanded="true" signature="696:704" ph="{...}" />
-                <marker date="1542802199654" expanded="true" signature="782:790" ph="{...}" />
+                <marker date="1543317793779" expanded="true" signature="6:66" ph="..." />
+                <marker date="1543317793779" expanded="true" signature="128:190" ph="{...}" />
+                <marker date="1543317793779" expanded="true" signature="175:188" ph="{...}" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/MexicanFood.Core/ApplicationService/Implementation/MealService.cs">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="-120">
+              <caret line="9" column="5" selection-start-line="9" selection-start-column="5" selection-end-line="9" selection-end-column="5" />
+              <folding>
+                <marker date="1543401239595" expanded="false" signature="6:61" ph="..." />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/MexicanFood.Core/ApplicationService/IOrderService.cs">
+          <provider selected="true" editor-type-id="text-editor">
+            <state>
+              <folding>
+                <marker date="1543317793778" expanded="false" signature="6:66" ph="..." />
+                <marker date="1543317793778" expanded="true" signature="113:165" ph="{...}" />
+                <marker date="1543317793778" expanded="true" signature="150:163" ph="{...}" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/MexicanFood.Core/ApplicationService/IMealService.cs">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="165">
+              <caret line="11" selection-start-line="11" selection-end-line="11" />
+              <folding>
+                <marker date="1543401239590" expanded="false" signature="6:12" ph="..." />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/MexicanFood.Entities/Meal.cs">
+          <provider selected="true" editor-type-id="text-editor">
+            <state>
+              <folding>
+                <marker date="1543317793784" expanded="false" signature="6:66" ph="..." />
+                <marker date="1543317793784" expanded="true" signature="98:397" ph="{...}" />
+                <marker date="1543317793784" expanded="true" signature="122:395" ph="{...}" />
               </folding>
             </state>
           </provider>
@@ -153,11 +187,20 @@
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
   </component>
   <component name="HighlightingSettingsPerFile">
-    <setting file="file://$PROJECT_DIR$/MexicanFood.RestApi/Controllers/UsersController.cs" root0="FORCE_HIGHLIGHTING" />
-    <setting file="file://$PROJECT_DIR$/MexicanFood.Core/ApplicationService/Implementation/UserService.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/MexicanFood.Entities/User.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/MexicanFood.Core/ApplicationService/IMealService.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/MexicanFood.RestApi/Controllers/UsersController.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/MexicanFood.Core/DomainService/IRepository.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/MexicanFood.Infrastructure.Data/Repositories/UserRepository.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/MexicanFood.Core/ApplicationService/Implementation/OrderService.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/MexicanFood.Entities/Order.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/MexicanFood.Core/ApplicationService/IOrderService.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/MexicanFood.Infrastructure.Data/Repositories/MealRepository.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/MexicanFood.Infrastructure.Data/Repositories/OrderRepository.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/MexicanFood.Core/ApplicationService/Implementation/MealService.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/MexicanFood.Core/ApplicationService/Implementation/UserService.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/MexicanFood.XUnitTest/ApplicationService/Implementation/MealServiceTest.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/MexicanFood.Entities/Meal.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/MexicanFood.Core/ApplicationService/IUserService.cs" root0="FORCE_HIGHLIGHTING" />
   </component>
   <component name="IdeDocumentHistory">
@@ -185,6 +228,9 @@
     <option name="x" value="722" />
     <option name="width" value="718" />
     <option name="height" value="900" />
+  </component>
+  <component name="ProjectLevelVcsManager">
+    <ConfirmationsSetting value="1" id="Add" />
   </component>
   <component name="ProjectView">
     <navigator currentView="SolutionExplorer" proportions="" version="1">
@@ -221,7 +267,21 @@
               <item name="MexicanFoodBackend" type="24d0babc:SolutionExplorerModelNode" />
               <item name="Core" type="24d0babc:SolutionExplorerModelNode" />
               <item name="MexicanFood.Core" type="24d0babc:SolutionExplorerModelNode" />
+              <item name="ApplicationService" type="24d0babc:SolutionExplorerModelNode" />
+              <item name="Implementation" type="24d0babc:SolutionExplorerModelNode" />
+            </path>
+            <path>
+              <item name="Project" type="784c90a0:SolutionExplorerRootNode" />
+              <item name="MexicanFoodBackend" type="24d0babc:SolutionExplorerModelNode" />
+              <item name="Core" type="24d0babc:SolutionExplorerModelNode" />
+              <item name="MexicanFood.Core" type="24d0babc:SolutionExplorerModelNode" />
               <item name="DomainService" type="24d0babc:SolutionExplorerModelNode" />
+            </path>
+            <path>
+              <item name="Project" type="784c90a0:SolutionExplorerRootNode" />
+              <item name="MexicanFoodBackend" type="24d0babc:SolutionExplorerModelNode" />
+              <item name="Core" type="24d0babc:SolutionExplorerModelNode" />
+              <item name="MexicanFood.Core.Entities" type="24d0babc:SolutionExplorerModelNode" />
             </path>
             <path>
               <item name="Project" type="784c90a0:SolutionExplorerRootNode" />
@@ -233,6 +293,13 @@
               <item name="MexicanFoodBackend" type="24d0babc:SolutionExplorerModelNode" />
               <item name="Infrastructure" type="24d0babc:SolutionExplorerModelNode" />
               <item name="MexicanFood.Infrastructure.Data" type="24d0babc:SolutionExplorerModelNode" />
+            </path>
+            <path>
+              <item name="Project" type="784c90a0:SolutionExplorerRootNode" />
+              <item name="MexicanFoodBackend" type="24d0babc:SolutionExplorerModelNode" />
+              <item name="Infrastructure" type="24d0babc:SolutionExplorerModelNode" />
+              <item name="MexicanFood.Infrastructure.Data" type="24d0babc:SolutionExplorerModelNode" />
+              <item name="Dependencies" type="24d0babc:SolutionExplorerModelNode" />
             </path>
             <path>
               <item name="Project" type="784c90a0:SolutionExplorerRootNode" />
@@ -257,7 +324,47 @@
               <item name="MexicanFoodBackend" type="24d0babc:SolutionExplorerModelNode" />
               <item name="UI" type="24d0babc:SolutionExplorerModelNode" />
               <item name="MexicanFood.RestApi" type="24d0babc:SolutionExplorerModelNode" />
+              <item name="Dependencies" type="24d0babc:SolutionExplorerModelNode" />
+            </path>
+            <path>
+              <item name="Project" type="784c90a0:SolutionExplorerRootNode" />
+              <item name="MexicanFoodBackend" type="24d0babc:SolutionExplorerModelNode" />
+              <item name="UI" type="24d0babc:SolutionExplorerModelNode" />
+              <item name="MexicanFood.RestApi" type="24d0babc:SolutionExplorerModelNode" />
+              <item name="Properties" type="24d0babc:SolutionExplorerModelNode" />
+            </path>
+            <path>
+              <item name="Project" type="784c90a0:SolutionExplorerRootNode" />
+              <item name="MexicanFoodBackend" type="24d0babc:SolutionExplorerModelNode" />
+              <item name="UI" type="24d0babc:SolutionExplorerModelNode" />
+              <item name="MexicanFood.RestApi" type="24d0babc:SolutionExplorerModelNode" />
               <item name="Controllers" type="24d0babc:SolutionExplorerModelNode" />
+            </path>
+            <path>
+              <item name="Project" type="784c90a0:SolutionExplorerRootNode" />
+              <item name="MexicanFoodBackend" type="24d0babc:SolutionExplorerModelNode" />
+              <item name="UnitTests" type="24d0babc:SolutionExplorerModelNode" />
+            </path>
+            <path>
+              <item name="Project" type="784c90a0:SolutionExplorerRootNode" />
+              <item name="MexicanFoodBackend" type="24d0babc:SolutionExplorerModelNode" />
+              <item name="UnitTests" type="24d0babc:SolutionExplorerModelNode" />
+              <item name="MexicanFood.XUnitTest" type="24d0babc:SolutionExplorerModelNode" />
+            </path>
+            <path>
+              <item name="Project" type="784c90a0:SolutionExplorerRootNode" />
+              <item name="MexicanFoodBackend" type="24d0babc:SolutionExplorerModelNode" />
+              <item name="UnitTests" type="24d0babc:SolutionExplorerModelNode" />
+              <item name="MexicanFood.XUnitTest" type="24d0babc:SolutionExplorerModelNode" />
+              <item name="ApplicationService" type="24d0babc:SolutionExplorerModelNode" />
+            </path>
+            <path>
+              <item name="Project" type="784c90a0:SolutionExplorerRootNode" />
+              <item name="MexicanFoodBackend" type="24d0babc:SolutionExplorerModelNode" />
+              <item name="UnitTests" type="24d0babc:SolutionExplorerModelNode" />
+              <item name="MexicanFood.XUnitTest" type="24d0babc:SolutionExplorerModelNode" />
+              <item name="ApplicationService" type="24d0babc:SolutionExplorerModelNode" />
+              <item name="Implementation" type="24d0babc:SolutionExplorerModelNode" />
             </path>
           </expand>
           <select />
@@ -320,7 +427,7 @@
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="1944000" />
+    <option name="totallyTimeSpent" value="1955000" />
   </component>
   <component name="TodoView">
     <todo-panel id="selected-file">
@@ -332,10 +439,9 @@
     </todo-panel>
   </component>
   <component name="ToolWindowManager">
-    <frame x="0" y="0" width="1440" height="900" extended-state="0" />
-    <editor active="true" />
+    <frame x="-8" y="-8" width="1936" height="1056" extended-state="6" />
     <layout>
-      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.2532189" />
+      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.15405117" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info id="Favorites" order="2" side_tool="true" />
       <window_info anchor="bottom" id="Message" order="0" />
@@ -360,6 +466,33 @@
       <window_info anchor="right" id="Errors In Solution" order="3" />
       <window_info anchor="right" id="Database" order="4" />
     </layout>
+    <layout-to-restore>
+      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.15405117" />
+      <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
+      <window_info id="Favorites" order="2" side_tool="true" />
+      <window_info anchor="bottom" id="Message" order="0" />
+      <window_info anchor="bottom" id="Find" order="1" />
+      <window_info anchor="bottom" id="Run" order="2" />
+      <window_info anchor="bottom" id="Debug" order="3" weight="0.4" />
+      <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
+      <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
+      <window_info anchor="bottom" id="TODO" order="6" />
+      <window_info anchor="bottom" id="NuGet" order="7" weight="0.3383948" />
+      <window_info anchor="bottom" id="Docker" order="8" show_stripe_button="false" />
+      <window_info anchor="bottom" id="Version Control" order="9" show_stripe_button="false" />
+      <window_info anchor="bottom" id="Database Changes" order="10" show_stripe_button="false" />
+      <window_info anchor="bottom" id="Unit Tests" order="11" />
+      <window_info anchor="bottom" id="REST Client" order="12" />
+      <window_info anchor="bottom" id="TeamCity" order="13" />
+      <window_info anchor="bottom" id="Terminal" order="14" />
+      <window_info anchor="bottom" id="Event Log" order="15" side_tool="true" />
+      <window_info anchor="right" id="Unit Tests Coverage" order="0" />
+      <window_info anchor="right" id="Commander" internal_type="SLIDING" order="1" type="SLIDING" weight="0.4" />
+      <window_info anchor="right" id="Ant Build" order="2" weight="0.25" />
+      <window_info anchor="right" content_ui="combo" id="Hierarchy" order="3" weight="0.25" />
+      <window_info anchor="right" id="Errors In Solution" order="4" />
+      <window_info anchor="right" id="Database" order="5" />
+    </layout-to-restore>
   </component>
   <component name="TypeScriptGeneratedFilesManager">
     <option name="version" value="1" />
@@ -388,67 +521,55 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="60">
           <caret line="4" column="8" selection-start-line="4" selection-start-column="8" selection-end-line="4" selection-end-column="8" />
-          <folding>
-            <marker date="1543317762649" expanded="true" signature="30:188" ph="{...}" />
-            <marker date="1543317762649" expanded="true" signature="51:186" ph="{...}" />
-          </folding>
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/MexicanFood.Core/ApplicationService/Implementation/UserService.cs">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="60">
-          <caret line="4" column="8" selection-start-line="4" selection-start-column="8" selection-end-line="4" selection-end-column="8" />
+        <state>
+          <folding>
+            <marker date="1543311955709" expanded="true" signature="60:113" ph="{...}" />
+            <marker date="1543311955709" expanded="true" signature="102:111" ph="{...}" />
+          </folding>
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/MexicanFood.Core/ApplicationService/IUserService.cs">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="60">
-          <caret line="4" column="8" selection-start-line="4" selection-start-column="8" selection-end-line="4" selection-end-column="8" />
+        <state>
           <folding>
-            <marker date="1542802120075" expanded="true" signature="45:89" ph="{...}" />
-            <marker date="1542802120075" expanded="true" signature="78:87" ph="{...}" />
+            <marker date="1542802598389" expanded="true" signature="45:89" ph="{...}" />
+            <marker date="1542802598389" expanded="true" signature="78:87" ph="{...}" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/MexicanFood.Core/DomainService/IRepository.cs">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/MexicanFood.Infrastructure.Data/Repositories/UserRepository.cs">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="150">
+          <caret line="10" selection-start-line="10" selection-end-line="10" />
+          <folding>
+            <marker date="1543401239633" expanded="true" signature="191:194" ph="{...}" />
+            <marker date="1543401239633" expanded="true" signature="191:196" ph="{...}" />
           </folding>
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/MexicanFood.RestApi/Controllers/UsersController.cs">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="360">
-          <caret line="28" column="49" selection-start-line="28" selection-start-column="49" selection-end-line="28" selection-end-column="49" />
-          <folding>
-            <marker date="1542802199654" expanded="false" signature="6:128" ph="..." />
-            <marker date="1542802199654" expanded="true" signature="171:795" ph="{...}" />
-            <marker date="1542802199654" expanded="true" signature="266:793" ph="{...}" />
-            <marker date="1542802199654" expanded="true" signature="350:403" ph="{...}" />
-            <marker date="1542802199654" expanded="true" signature="488:515" ph="{...}" />
-            <marker date="1542802199654" expanded="true" signature="594:602" ph="{...}" />
-            <marker date="1542802199654" expanded="true" signature="696:704" ph="{...}" />
-            <marker date="1542802199654" expanded="true" signature="782:790" ph="{...}" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/MexicanFood.Core/DomainService/IRepository.cs">
-      <provider selected="true" editor-type-id="text-editor">
         <state>
           <folding>
-            <marker date="1543317425093" expanded="false" signature="6:66" ph="..." />
-            <marker date="1543317425093" expanded="true" signature="108:161" ph="{...}" />
-            <marker date="1543317425093" expanded="true" signature="146:159" ph="{...}" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/MexicanFood.Infrastructure.Data/Repositories/UserRepository.cs">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="105">
-          <caret line="7" column="21" selection-start-line="7" selection-start-column="21" selection-end-line="7" selection-end-column="21" />
-          <folding>
-            <marker date="1543319878200" expanded="true" signature="6:65" ph="..." />
-            <marker date="1543319878200" expanded="true" signature="121:196" ph="{...}" />
-            <marker date="1543319878200" expanded="true" signature="172:194" ph="{...}" />
+            <marker date="1542802598532" expanded="false" signature="6:128" ph="..." />
+            <marker date="1542802598532" expanded="true" signature="171:795" ph="{...}" />
+            <marker date="1542802598532" expanded="true" signature="266:793" ph="{...}" />
+            <marker date="1542802598532" expanded="true" signature="350:403" ph="{...}" />
+            <marker date="1542802598532" expanded="true" signature="488:515" ph="{...}" />
+            <marker date="1542802598532" expanded="true" signature="594:602" ph="{...}" />
+            <marker date="1542802598532" expanded="true" signature="696:704" ph="{...}" />
+            <marker date="1542802598532" expanded="true" signature="782:790" ph="{...}" />
           </folding>
         </state>
       </provider>
