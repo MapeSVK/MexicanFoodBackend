@@ -11500,23 +11500,23 @@
     ]
   },
   "packageFolders": {
-    "C:\\Users\\Elisabeth\\.nuget\\packages\\": {},
+    "C:\\Users\\Jesper\\.nuget\\packages\\": {},
     "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder": {}
   },
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\Elisabeth\\source\\repos\\MexicanFoodBackend\\MexicanFood.RestApi\\MexicanFood.RestApi.csproj",
+      "projectUniqueName": "C:\\Users\\Jesper\\Desktop\\VisualStudioProjects\\MexicanFoodBackend\\MexicanFood.RestApi\\MexicanFood.RestApi.csproj",
       "projectName": "MexicanFood.RestApi",
-      "projectPath": "C:\\Users\\Elisabeth\\source\\repos\\MexicanFoodBackend\\MexicanFood.RestApi\\MexicanFood.RestApi.csproj",
-      "packagesPath": "C:\\Users\\Elisabeth\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\Elisabeth\\source\\repos\\MexicanFoodBackend\\MexicanFood.RestApi\\obj\\",
+      "projectPath": "C:\\Users\\Jesper\\Desktop\\VisualStudioProjects\\MexicanFoodBackend\\MexicanFood.RestApi\\MexicanFood.RestApi.csproj",
+      "packagesPath": "C:\\Users\\Jesper\\.nuget\\packages\\",
+      "outputPath": "C:\\Users\\Jesper\\Desktop\\VisualStudioProjects\\MexicanFoodBackend\\MexicanFood.RestApi\\obj\\",
       "projectStyle": "PackageReference",
       "fallbackFolders": [
         "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder"
       ],
       "configFilePaths": [
-        "C:\\Users\\Elisabeth\\AppData\\Roaming\\NuGet\\NuGet.Config",
+        "C:\\Users\\Jesper\\AppData\\Roaming\\NuGet\\NuGet.Config",
         "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
       ],
       "originalTargetFrameworks": [
@@ -11547,6 +11547,7 @@
             "autoReferenced": true
           },
           "Microsoft.NETCore.App": {
+            "suppressParent": "All",
             "target": "Package",
             "version": "[2.1.0, )",
             "autoReferenced": true
