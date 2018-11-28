@@ -192,23 +192,23 @@
     ]
   },
   "packageFolders": {
-    "/Users/Mape/.nuget/packages/": {},
-    "/usr/local/share/dotnet/sdk/NuGetFallbackFolder": {}
+    "C:\\Users\\ptoma\\.nuget\\packages\\": {},
+    "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder": {}
   },
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "/Users/Mape/GitClonePath/MexicanFoodBackend/MexicanFood.Core/MexicanFood.Core.csproj",
+      "projectUniqueName": "C:\\Users\\ptoma\\OneDrive\\Documents\\BatFolder\\Repositories\\MexicanFoodBackend\\MexicanFood.Core\\MexicanFood.Core.csproj",
       "projectName": "MexicanFood.Core",
-      "projectPath": "/Users/Mape/GitClonePath/MexicanFoodBackend/MexicanFood.Core/MexicanFood.Core.csproj",
-      "packagesPath": "/Users/Mape/.nuget/packages/",
-      "outputPath": "/Users/Mape/GitClonePath/MexicanFoodBackend/MexicanFood.Core/obj/",
+      "projectPath": "C:\\Users\\ptoma\\OneDrive\\Documents\\BatFolder\\Repositories\\MexicanFoodBackend\\MexicanFood.Core\\MexicanFood.Core.csproj",
+      "packagesPath": "C:\\Users\\ptoma\\.nuget\\packages\\",
+      "outputPath": "C:\\Users\\ptoma\\OneDrive\\Documents\\BatFolder\\Repositories\\MexicanFoodBackend\\MexicanFood.Core\\obj\\",
       "projectStyle": "PackageReference",
       "fallbackFolders": [
-        "/usr/local/share/dotnet/sdk/NuGetFallbackFolder"
+        "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder"
       ],
       "configFilePaths": [
-        "/Users/Mape/.config/NuGet/NuGet.Config"
+        "C:\\Users\\ptoma\\AppData\\Roaming\\NuGet\\NuGet.Config"
       ],
       "originalTargetFrameworks": [
         "netstandard2.0"
@@ -219,8 +219,8 @@
       "frameworks": {
         "netstandard2.0": {
           "projectReferences": {
-            "/Users/Mape/GitClonePath/MexicanFoodBackend/MexicanFood.Entities/MexicanFood.Core.Entities.csproj": {
-              "projectPath": "/Users/Mape/GitClonePath/MexicanFoodBackend/MexicanFood.Entities/MexicanFood.Core.Entities.csproj"
+            "C:\\Users\\ptoma\\OneDrive\\Documents\\BatFolder\\Repositories\\MexicanFoodBackend\\MexicanFood.Entities\\MexicanFood.Core.Entities.csproj": {
+              "projectPath": "C:\\Users\\ptoma\\OneDrive\\Documents\\BatFolder\\Repositories\\MexicanFoodBackend\\MexicanFood.Entities\\MexicanFood.Core.Entities.csproj"
             }
           }
         }

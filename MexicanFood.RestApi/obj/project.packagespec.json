@@ -1,13 +1,13 @@
 ﻿{
   "version": "1.0.0",
   "restore": {
-    "projectUniqueName": "/Users/Mape/GitClonePath/MexicanFoodBackend/MexicanFood.RestApi/MexicanFood.RestApi.csproj",
+    "projectUniqueName": "C:\\Users\\ptoma\\OneDrive\\Documents\\BatFolder\\Repositories\\MexicanFoodBackend\\MexicanFood.RestApi\\MexicanFood.RestApi.csproj",
     "projectName": "MexicanFood.RestApi",
-    "projectPath": "/Users/Mape/GitClonePath/MexicanFoodBackend/MexicanFood.RestApi/MexicanFood.RestApi.csproj",
-    "outputPath": "/Users/Mape/GitClonePath/MexicanFoodBackend/MexicanFood.RestApi/obj/",
+    "projectPath": "C:\\Users\\ptoma\\OneDrive\\Documents\\BatFolder\\Repositories\\MexicanFoodBackend\\MexicanFood.RestApi\\MexicanFood.RestApi.csproj",
+    "outputPath": "C:\\Users\\ptoma\\OneDrive\\Documents\\BatFolder\\Repositories\\MexicanFoodBackend\\MexicanFood.RestApi\\obj\\",
     "projectStyle": "PackageReference",
     "fallbackFolders": [
-      "/usr/local/share/dotnet/sdk/NuGetFallbackFolder"
+      "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder"
     ],
     "originalTargetFrameworks": [
       "netcoreapp2.1"

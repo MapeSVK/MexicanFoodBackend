@@ -716,23 +716,23 @@
     ]
   },
   "packageFolders": {
-    "/Users/Mape/.nuget/packages/": {},
-    "/usr/local/share/dotnet/sdk/NuGetFallbackFolder": {}
+    "C:\\Users\\ptoma\\.nuget\\packages\\": {},
+    "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder": {}
   },
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "/Users/Mape/GitClonePath/MexicanFoodBackend/MexicanFood.Infrastructure.Data/MexicanFood.Infrastructure.Data.csproj",
+      "projectUniqueName": "C:\\Users\\ptoma\\OneDrive\\Documents\\BatFolder\\Repositories\\MexicanFoodBackend\\MexicanFood.Infrastructure.Data\\MexicanFood.Infrastructure.Data.csproj",
       "projectName": "MexicanFood.Infrastructure.Data",
-      "projectPath": "/Users/Mape/GitClonePath/MexicanFoodBackend/MexicanFood.Infrastructure.Data/MexicanFood.Infrastructure.Data.csproj",
-      "packagesPath": "/Users/Mape/.nuget/packages/",
-      "outputPath": "/Users/Mape/GitClonePath/MexicanFoodBackend/MexicanFood.Infrastructure.Data/obj/",
+      "projectPath": "C:\\Users\\ptoma\\OneDrive\\Documents\\BatFolder\\Repositories\\MexicanFoodBackend\\MexicanFood.Infrastructure.Data\\MexicanFood.Infrastructure.Data.csproj",
+      "packagesPath": "C:\\Users\\ptoma\\.nuget\\packages\\",
+      "outputPath": "C:\\Users\\ptoma\\OneDrive\\Documents\\BatFolder\\Repositories\\MexicanFoodBackend\\MexicanFood.Infrastructure.Data\\obj\\",
       "projectStyle": "PackageReference",
       "fallbackFolders": [
-        "/usr/local/share/dotnet/sdk/NuGetFallbackFolder"
+        "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder"
       ],
       "configFilePaths": [
-        "/Users/Mape/.config/NuGet/NuGet.Config"
+        "C:\\Users\\ptoma\\AppData\\Roaming\\NuGet\\NuGet.Config"
       ],
       "originalTargetFrameworks": [
         "netcoreapp2.1"
@@ -743,11 +743,11 @@
       "frameworks": {
         "netcoreapp2.1": {
           "projectReferences": {
-            "/Users/Mape/GitClonePath/MexicanFoodBackend/MexicanFood.Core/MexicanFood.Core.csproj": {
-              "projectPath": "/Users/Mape/GitClonePath/MexicanFoodBackend/MexicanFood.Core/MexicanFood.Core.csproj"
+            "C:\\Users\\ptoma\\OneDrive\\Documents\\BatFolder\\Repositories\\MexicanFoodBackend\\MexicanFood.Core\\MexicanFood.Core.csproj": {
+              "projectPath": "C:\\Users\\ptoma\\OneDrive\\Documents\\BatFolder\\Repositories\\MexicanFoodBackend\\MexicanFood.Core\\MexicanFood.Core.csproj"
             },
-            "/Users/Mape/GitClonePath/MexicanFoodBackend/MexicanFood.Entities/MexicanFood.Core.Entities.csproj": {
-              "projectPath": "/Users/Mape/GitClonePath/MexicanFoodBackend/MexicanFood.Entities/MexicanFood.Core.Entities.csproj"
+            "C:\\Users\\ptoma\\OneDrive\\Documents\\BatFolder\\Repositories\\MexicanFoodBackend\\MexicanFood.Entities\\MexicanFood.Core.Entities.csproj": {
+              "projectPath": "C:\\Users\\ptoma\\OneDrive\\Documents\\BatFolder\\Repositories\\MexicanFoodBackend\\MexicanFood.Entities\\MexicanFood.Core.Entities.csproj"
             }
           }
         }

@@ -1,13 +1,13 @@
 ﻿{
   "version": "1.0.0",
   "restore": {
-    "projectUniqueName": "/Users/Mape/GitClonePath/MexicanFoodBackend/MexicanFood.Entities/MexicanFood.Core.Entities.csproj",
+    "projectUniqueName": "C:\\Users\\ptoma\\OneDrive\\Documents\\BatFolder\\Repositories\\MexicanFoodBackend\\MexicanFood.Entities\\MexicanFood.Core.Entities.csproj",
     "projectName": "MexicanFood.Core.Entities",
-    "projectPath": "/Users/Mape/GitClonePath/MexicanFoodBackend/MexicanFood.Entities/MexicanFood.Core.Entities.csproj",
-    "outputPath": "/Users/Mape/GitClonePath/MexicanFoodBackend/MexicanFood.Entities/obj/",
+    "projectPath": "C:\\Users\\ptoma\\OneDrive\\Documents\\BatFolder\\Repositories\\MexicanFoodBackend\\MexicanFood.Entities\\MexicanFood.Core.Entities.csproj",
+    "outputPath": "C:\\Users\\ptoma\\OneDrive\\Documents\\BatFolder\\Repositories\\MexicanFoodBackend\\MexicanFood.Entities\\obj\\",
     "projectStyle": "PackageReference",
     "fallbackFolders": [
-      "/usr/local/share/dotnet/sdk/NuGetFallbackFolder"
+      "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder"
     ],
     "originalTargetFrameworks": [
       "netstandard2.0"
