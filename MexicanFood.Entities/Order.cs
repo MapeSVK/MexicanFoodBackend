@@ -7,7 +7,7 @@ namespace MexicanFood.Core.Entities
     public class Order
     {
         public int Id { get; set; }
-        public int[] MealId { get; set; }
+        //public int[] MealId { get; set; }
         public string MobileNumber { get; set; }
         public string CustomerName { get; set; }
         public double TotalPrice { get; set; }

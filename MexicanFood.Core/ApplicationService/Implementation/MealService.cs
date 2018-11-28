@@ -31,7 +31,7 @@ namespace MexicanFood.Core.ApplicationService.Implementation
             if (string.IsNullOrEmpty(meal.Name))
                 throw new InvalidDataException("Meal needs a name");
             
-            if (meal.Ingredients.Length == 0)
+            if (meal.Ingredients == null)
                 throw new InvalidDataException("Meal needs at least 1 ingredient");
             
             if (meal.Price == 0)
@@ -44,7 +44,16 @@ namespace MexicanFood.Core.ApplicationService.Implementation
 
         public Meal UpdateMeal(int id, Meal mealUpdate)
         {
-            throw new NotImplementedException();
+            if (string.IsNullOrEmpty(mealUpdate.Name))
+                throw new InvalidDataException("Meal needs a name");
+            
+            if (mealUpdate.Ingredients == null)
+                throw new InvalidDataException("Meal needs at least 1 ingredient");
+            
+            if (mealUpdate.Price == 0)
+                throw new InvalidDataException("Meal needs a price");
+            
+            return _mealRepository.UpdateEntity(id, mealUpdate);
         }
 
         public Meal DeleteMeal(int id)

@@ -97,6 +97,7 @@ namespace MexicanFood.XUnitTest
             Assert.Equal("Meal needs a price", ex.Message);
         }
 
+        /*
         [Fact]
         public void GetMealsShouldCallMealRepositoryOnce()
         {
@@ -109,8 +110,9 @@ namespace MexicanFood.XUnitTest
 
             service.GetMeals();
 
-            mealRepository.Verify(m => m.EntityFoundById(1), Times.Once);
+            mealRepository.Verify(m => m.ReadAllEntities(), Times.Once);
         }
+        */
         
         [Fact]
         public void MealFoundByIdShouldCallMealRepositoryOnce()
@@ -147,7 +149,7 @@ namespace MexicanFood.XUnitTest
                 },
                 Description = "testDescription",
                 Picture = "pictureString",
-                //Price = 10
+                Price = 10
             };
 
             service.CreateMeal(meal);
