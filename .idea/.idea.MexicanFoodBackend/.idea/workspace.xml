@@ -24,32 +24,8 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="698a9472-8cbc-45d5-8200-ed1306d43462" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/.idea/.idea.MexicanFoodBackend/.idea/contentModel.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.MexicanFoodBackend/.idea/contentModel.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/.idea.MexicanFoodBackend/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.MexicanFoodBackend/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/MexicanFood.Core/ApplicationService/IMealService.cs" beforeDir="false" afterPath="$PROJECT_DIR$/MexicanFood.Core/ApplicationService/IMealService.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/MexicanFood.Core/ApplicationService/Implementation/MealService.cs" beforeDir="false" afterPath="$PROJECT_DIR$/MexicanFood.Core/ApplicationService/Implementation/MealService.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/MexicanFood.Core/DomainService/IRepository.cs" beforeDir="false" afterPath="$PROJECT_DIR$/MexicanFood.Core/DomainService/IRepository.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/MexicanFood.Core/obj/Debug/netstandard2.0/MexicanFood.Core.csproj.CoreCompileInputs.cache" beforeDir="false" afterPath="$PROJECT_DIR$/MexicanFood.Core/obj/Debug/netstandard2.0/MexicanFood.Core.csproj.CoreCompileInputs.cache" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/MexicanFood.Core/obj/Debug/netstandard2.0/MexicanFood.Core.csprojAssemblyReference.cache" beforeDir="false" afterPath="$PROJECT_DIR$/MexicanFood.Core/obj/Debug/netstandard2.0/MexicanFood.Core.csprojAssemblyReference.cache" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/MexicanFood.Infrastructure.Data/MexicanFood.Infrastructure.Data.csproj" beforeDir="false" afterPath="$PROJECT_DIR$/MexicanFood.Infrastructure.Data/MexicanFood.Infrastructure.Data.csproj" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/MexicanFood.Infrastructure.Data/Repositories/MealRepository.cs" beforeDir="false" afterPath="$PROJECT_DIR$/MexicanFood.Infrastructure.Data/Repositories/MealRepository.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/MexicanFood.Infrastructure.Data/obj/Debug/netcoreapp2.1/MexicanFood.Infrastructure.Data.assets.cache" beforeDir="false" afterPath="$PROJECT_DIR$/MexicanFood.Infrastructure.Data/obj/Debug/netcoreapp2.1/MexicanFood.Infrastructure.Data.assets.cache" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/MexicanFood.Infrastructure.Data/obj/Debug/netcoreapp2.1/MexicanFood.Infrastructure.Data.csprojAssemblyReference.cache" beforeDir="false" afterPath="$PROJECT_DIR$/MexicanFood.Infrastructure.Data/obj/Debug/netcoreapp2.1/MexicanFood.Infrastructure.Data.csprojAssemblyReference.cache" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/MexicanFood.Infrastructure.Data/obj/MexicanFood.Infrastructure.Data.csproj.nuget.cache" beforeDir="false" afterPath="$PROJECT_DIR$/MexicanFood.Infrastructure.Data/obj/MexicanFood.Infrastructure.Data.csproj.nuget.cache" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/MexicanFood.Infrastructure.Data/obj/MexicanFood.Infrastructure.Data.csproj.nuget.g.props" beforeDir="false" afterPath="$PROJECT_DIR$/MexicanFood.Infrastructure.Data/obj/MexicanFood.Infrastructure.Data.csproj.nuget.g.props" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/MexicanFood.Infrastructure.Data/obj/project.assets.json" beforeDir="false" afterPath="$PROJECT_DIR$/MexicanFood.Infrastructure.Data/obj/project.assets.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/MexicanFood.Infrastructure.Data/obj/project.packagespec.json" beforeDir="false" afterPath="$PROJECT_DIR$/MexicanFood.Infrastructure.Data/obj/project.packagespec.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/MexicanFood.RestApi/MexicanFood.RestApi.csproj" beforeDir="false" afterPath="$PROJECT_DIR$/MexicanFood.RestApi/MexicanFood.RestApi.csproj" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/MexicanFood.RestApi/obj/MexicanFood.RestApi.csproj.nuget.cache" beforeDir="false" afterPath="$PROJECT_DIR$/MexicanFood.RestApi/obj/MexicanFood.RestApi.csproj.nuget.cache" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/MexicanFood.RestApi/obj/project.assets.json" beforeDir="false" afterPath="$PROJECT_DIR$/MexicanFood.RestApi/obj/project.assets.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/MexicanFood.RestApi/obj/project.packagespec.json" beforeDir="false" afterPath="$PROJECT_DIR$/MexicanFood.RestApi/obj/project.packagespec.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/MexicanFood.XUnitTest/ApplicationService/Implementation/MealServiceTest.cs" beforeDir="false" afterPath="$PROJECT_DIR$/MexicanFood.XUnitTest/ApplicationService/Implementation/MealServiceTest.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/MexicanFood.XUnitTest/MexicanFood.XUnitTest.csproj" beforeDir="false" afterPath="$PROJECT_DIR$/MexicanFood.XUnitTest/MexicanFood.XUnitTest.csproj" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/MexicanFood.XUnitTest/obj/Debug/netcoreapp2.1/MexicanFood.XUnitTest.assets.cache" beforeDir="false" afterPath="$PROJECT_DIR$/MexicanFood.XUnitTest/obj/Debug/netcoreapp2.1/MexicanFood.XUnitTest.assets.cache" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/MexicanFood.XUnitTest/obj/Debug/netcoreapp2.1/MexicanFood.XUnitTest.csproj.CoreCompileInputs.cache" beforeDir="false" afterPath="$PROJECT_DIR$/MexicanFood.XUnitTest/obj/Debug/netcoreapp2.1/MexicanFood.XUnitTest.csproj.CoreCompileInputs.cache" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/MexicanFood.XUnitTest/obj/Debug/netcoreapp2.1/MexicanFood.XUnitTest.csprojAssemblyReference.cache" beforeDir="false" afterPath="$PROJECT_DIR$/MexicanFood.XUnitTest/obj/Debug/netcoreapp2.1/MexicanFood.XUnitTest.csprojAssemblyReference.cache" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/MexicanFood.XUnitTest/obj/MexicanFood.XUnitTest.csproj.nuget.cache" beforeDir="false" afterPath="$PROJECT_DIR$/MexicanFood.XUnitTest/obj/MexicanFood.XUnitTest.csproj.nuget.cache" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/MexicanFood.XUnitTest/obj/project.assets.json" beforeDir="false" afterPath="$PROJECT_DIR$/MexicanFood.XUnitTest/obj/project.assets.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/MexicanFood.Infrastructure.Data/Repositories/OrderRepository.cs" beforeDir="false" afterPath="$PROJECT_DIR$/MexicanFood.Infrastructure.Data/Repositories/OrderRepository.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/MexicanFood.Infrastructure.Data/Repositories/UserRepository.cs" beforeDir="false" afterPath="$PROJECT_DIR$/MexicanFood.Infrastructure.Data/Repositories/UserRepository.cs" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -95,12 +71,12 @@
       </usages-collector>
       <usages-collector id="statistics.file.extensions.open">
         <counts>
-          <entry key="cs" value="19" />
+          <entry key="cs" value="21" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.types.open">
         <counts>
-          <entry key="C#" value="19" />
+          <entry key="C#" value="21" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.extensions.edit">
@@ -117,25 +93,20 @@
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/MexicanFood.RestApi/Controllers/MealsController.cs">
+      <file pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/MexicanFood.Infrastructure.Data/Repositories/UserRepository.cs">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="477">
-              <caret line="50" column="57" selection-start-line="50" selection-start-column="57" selection-end-line="50" selection-end-column="57" />
+            <state relative-caret-position="143">
+              <caret line="10" column="55" selection-start-line="10" selection-start-column="12" selection-end-line="10" selection-end-column="55" />
               <folding>
-                <marker date="1543400243728" expanded="true" signature="6:150" ph="..." />
-                <marker date="1543400243728" expanded="true" signature="193:1896" ph="{...}" />
-                <marker date="1543400243728" expanded="true" signature="297:1894" ph="{...}" />
-                <marker date="1543400243728" expanded="true" signature="405:465" ph="{...}" />
-                <marker date="1543400243728" expanded="true" signature="564:787" ph="{...}" />
-                <marker date="1543400243728" expanded="true" signature="590:670" ph="{...}" />
-                <marker date="1543400243728" expanded="true" signature="702:776" ph="{...}" />
-                <marker date="1543400243728" expanded="true" signature="888:1052" ph="{...}" />
-                <marker date="1543400243728" expanded="true" signature="1160:1388" ph="{...}" />
-                <marker date="1543400243728" expanded="true" signature="1186:1272" ph="{...}" />
-                <marker date="1543400243728" expanded="true" signature="1304:1378" ph="{...}" />
-                <marker date="1543400243728" expanded="true" signature="1511:1712" ph="{...}" />
-                <marker date="1543400243728" expanded="true" signature="1822:1888" ph="{...}" />
+                <marker date="1543400804930" expanded="true" signature="6:99" ph="..." />
+                <marker date="1543400804930" expanded="true" signature="155:699" ph="{...}" />
+                <marker date="1543400804930" expanded="true" signature="206:697" ph="{...}" />
+                <marker date="1543400804930" expanded="true" signature="254:309" ph="{...}" />
+                <marker date="1543400804930" expanded="true" signature="348:403" ph="{...}" />
+                <marker date="1543400804930" expanded="true" signature="444:499" ph="{...}" />
+                <marker date="1543400804930" expanded="true" signature="548:603" ph="{...}" />
+                <marker date="1543400804930" expanded="true" signature="639:694" ph="{...}" />
               </folding>
             </state>
           </provider>
@@ -147,9 +118,9 @@
             <state relative-caret-position="255">
               <caret line="17" column="1" selection-start-line="17" selection-start-column="1" selection-end-line="17" selection-end-column="1" />
               <folding>
-                <marker date="1543391935650" expanded="true" signature="6:61" ph="..." />
-                <marker date="1543391935650" expanded="true" signature="108:348" ph="{...}" />
-                <marker date="1543391935650" expanded="true" signature="144:346" ph="{...}" />
+                <marker date="1543400753136" expanded="true" signature="6:61" ph="..." />
+                <marker date="1543400753136" expanded="true" signature="108:348" ph="{...}" />
+                <marker date="1543400753136" expanded="true" signature="144:346" ph="{...}" />
               </folding>
             </state>
           </provider>
@@ -158,18 +129,10 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/MexicanFood.Core/ApplicationService/Implementation/MealService.cs">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="582">
-              <caret line="39" column="47" selection-start-line="39" selection-start-column="47" selection-end-line="39" selection-end-column="47" />
+            <state relative-caret-position="792">
+              <caret line="53" column="5" selection-start-line="53" selection-start-column="5" selection-end-line="53" selection-end-column="5" />
               <folding>
-                <marker date="1543400243748" expanded="true" signature="6:149" ph="..." />
-                <marker date="1543400243748" expanded="true" signature="211:1485" ph="{...}" />
-                <marker date="1543400243748" expanded="true" signature="257:1483" ph="{...}" />
-                <marker date="1543400243748" expanded="true" signature="385:451" ph="{...}" />
-                <marker date="1543400243748" expanded="true" signature="497:580" ph="{...}" />
-                <marker date="1543400243748" expanded="true" signature="623:699" ph="{...}" />
-                <marker date="1543400243748" expanded="true" signature="742:1238" ph="{...}" />
-                <marker date="1543400243748" expanded="true" signature="1295:1364" ph="{...}" />
-                <marker date="1543400243748" expanded="true" signature="1404:1477" ph="{...}" />
+                <marker date="1543400753141" expanded="true" signature="6:61" ph="..." />
               </folding>
             </state>
           </provider>
@@ -178,12 +141,12 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/MexicanFood.Core/DomainService/IRepository.cs">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="135">
-              <caret line="11" selection-start-line="11" selection-end-line="11" />
+            <state relative-caret-position="90">
+              <caret line="8" selection-start-line="8" selection-end-line="8" />
               <folding>
-                <marker date="1543400243706" expanded="false" signature="6:66" ph="..." />
-                <marker date="1543400243706" expanded="true" signature="108:349" ph="{...}" />
-                <marker date="1543400243706" expanded="true" signature="146:347" ph="{...}" />
+                <marker date="1543400753142" expanded="false" signature="6:66" ph="..." />
+                <marker date="1543400753142" expanded="true" signature="108:349" ph="{...}" />
+                <marker date="1543400753142" expanded="true" signature="146:347" ph="{...}" />
               </folding>
             </state>
           </provider>
@@ -192,63 +155,58 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/MexicanFood.Infrastructure.Data/Repositories/MealRepository.cs">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="570">
-              <caret line="38" column="31" selection-start-line="38" selection-start-column="31" selection-end-line="38" selection-end-column="31" />
+            <state relative-caret-position="720">
+              <caret line="48" column="5" selection-start-line="48" selection-start-column="5" selection-end-line="48" selection-end-column="5" />
               <folding>
-                <marker date="1543394839639" expanded="true" signature="6:155" ph="..." />
-                <marker date="1543394839639" expanded="true" signature="211:1283" ph="{...}" />
-                <marker date="1543394839639" expanded="true" signature="265:1281" ph="{...}" />
-                <marker date="1543394839639" expanded="true" signature="368:412" ph="{...}" />
-                <marker date="1543394839639" expanded="true" signature="464:515" ph="{...}" />
-                <marker date="1543394839639" expanded="true" signature="560:649" ph="{...}" />
-                <marker date="1543394839639" expanded="true" signature="694:799" ph="{...}" />
-                <marker date="1543394839639" expanded="true" signature="858:1087" ph="{...}" />
-                <marker date="1543394839639" expanded="true" signature="1129:1275" ph="{...}" />
+                <marker date="1543400753155" expanded="true" signature="6:78" ph="..." />
               </folding>
             </state>
           </provider>
         </entry>
       </file>
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/MexicanFood.Infrastructure.Data/Repositories/MexicanFoodContext.cs">
+        <entry file="file://$PROJECT_DIR$/MexicanFood.XUnitTest/ApplicationService/Implementation/MealServiceTest.cs">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="345">
-              <caret line="25" column="48" selection-start-line="25" selection-start-column="48" selection-end-line="25" selection-end-column="48" />
+            <state relative-caret-position="1935">
+              <caret line="174" column="1" selection-start-line="174" selection-start-column="1" selection-end-line="174" selection-end-column="1" />
               <folding>
-                <marker date="1543390724610" expanded="false" signature="6:97" ph="..." />
-                <marker date="1543390724610" expanded="true" signature="153:810" ph="{...}" />
-                <marker date="1543390724610" expanded="true" signature="203:808" ph="{...}" />
-                <marker date="1543390724610" expanded="true" signature="297:317" ph="{...}" />
-                <marker date="1543390724610" expanded="true" signature="401:658" ph="/* protected override void OnModelCreating(ModelBuilder modelBuilder) ... */" />
+                <marker date="1543400753193" expanded="true" signature="6:221" ph="..." />
+                <marker date="1543400753193" expanded="true" signature="254:5461" ph="{...}" />
+                <marker date="1543400753193" expanded="true" signature="289:5459" ph="{...}" />
+                <marker date="1543400753193" expanded="true" signature="369:1213" ph="{...}" />
+                <marker date="1543400753193" expanded="true" signature="717:1045" ph="{...}" />
+                <marker date="1543400753193" expanded="true" signature="815:911" ph="{...}" />
+                <marker date="1543400753193" expanded="true" signature="1294:2189" ph="{...}" />
+                <marker date="1543400753193" expanded="true" signature="1642:2006" ph="{...}" />
+                <marker date="1543400753193" expanded="true" signature="1695:1873" ph="/* Ingredients = new string[] ... */" />
+                <marker date="1543400753193" expanded="true" signature="2265:3110" ph="{...}" />
+                <marker date="1543400753193" expanded="true" signature="2613:2941" ph="{...}" />
+                <marker date="1543400753193" expanded="true" signature="2709:2805" ph="{...}" />
+                <marker date="1543400753193" expanded="true" signature="3185:3559" ph="{...}" />
+                <marker date="1543400753193" expanded="true" signature="3647:4028" ph="{...}" />
+                <marker date="1543400753193" expanded="true" signature="4117:4930" ph="{...}" />
+                <marker date="1543400753193" expanded="true" signature="4465:4793" ph="{...}" />
+                <marker date="1543400753193" expanded="true" signature="4561:4657" ph="{...}" />
+                <marker date="1543400753193" expanded="true" signature="5081:5453" ph="{...}" />
               </folding>
             </state>
           </provider>
         </entry>
       </file>
-      <file pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/MexicanFood.XUnitTest/ApplicationService/Implementation/MealServiceTest.cs">
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/MexicanFood.Infrastructure.Data/Repositories/OrderRepository.cs">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="237">
-              <caret line="100" column="20" selection-start-line="100" selection-start-column="20" selection-end-line="100" selection-end-column="20" />
+            <state relative-caret-position="120">
+              <caret line="12" column="48" selection-start-line="12" selection-start-column="12" selection-end-line="12" selection-end-column="48" />
               <folding>
-                <marker date="1543397711438" expanded="true" signature="6:221" ph="..." />
-                <marker date="1543397711438" expanded="true" signature="254:5461" ph="{...}" />
-                <marker date="1543397711438" expanded="true" signature="289:5459" ph="{...}" />
-                <marker date="1543397711438" expanded="true" signature="369:1213" ph="{...}" />
-                <marker date="1543397711438" expanded="true" signature="717:1045" ph="{...}" />
-                <marker date="1543397711438" expanded="true" signature="815:911" ph="{...}" />
-                <marker date="1543397711438" expanded="true" signature="1294:2189" ph="{...}" />
-                <marker date="1543397711438" expanded="true" signature="1642:2006" ph="{...}" />
-                <marker date="1543397711438" expanded="true" signature="1695:1873" ph="/* Ingredients = new string[] ... */" />
-                <marker date="1543397711438" expanded="true" signature="2265:3110" ph="{...}" />
-                <marker date="1543397711438" expanded="true" signature="2613:2941" ph="{...}" />
-                <marker date="1543397711438" expanded="true" signature="2709:2805" ph="{...}" />
-                <marker date="1543397711438" expanded="true" signature="3185:3559" ph="{...}" />
-                <marker date="1543397711438" expanded="true" signature="3647:4028" ph="{...}" />
-                <marker date="1543397711438" expanded="true" signature="4117:4930" ph="{...}" />
-                <marker date="1543397711438" expanded="true" signature="4465:4793" ph="{...}" />
-                <marker date="1543397711438" expanded="true" signature="4561:4657" ph="{...}" />
-                <marker date="1543397711438" expanded="true" signature="5081:5453" ph="{...}" />
+                <marker date="1543400804904" expanded="false" signature="6:137" ph="..." />
+                <marker date="1543400804904" expanded="true" signature="193:854" ph="{...}" />
+                <marker date="1543400804904" expanded="true" signature="248:852" ph="{...}" />
+                <marker date="1543400804904" expanded="true" signature="306:375" ph="{...}" />
+                <marker date="1543400804904" expanded="true" signature="421:490" ph="{...}" />
+                <marker date="1543400804904" expanded="true" signature="539:608" ph="{...}" />
+                <marker date="1543400804904" expanded="true" signature="665:734" ph="{...}" />
+                <marker date="1543400804904" expanded="true" signature="777:846" ph="{...}" />
               </folding>
             </state>
           </provider>
@@ -265,8 +223,8 @@
     <setting file="file://$PROJECT_DIR$/MexicanFood.RestApi/Controllers/UsersController.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/MexicanFood.Core/DomainService/IRepository.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/MexicanFood.Infrastructure.Data/Repositories/UserRepository.cs" root0="FORCE_HIGHLIGHTING" />
-    <setting file="file://$PROJECT_DIR$/MexicanFood.RestApi/Controllers/MealsController.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/MexicanFood.Infrastructure.Data/Repositories/MexicanFoodContext.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/MexicanFood.RestApi/Controllers/MealsController.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/MexicanFood.Infrastructure.Data/Repositories/MealRepository.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/MexicanFood.Infrastructure.Data/Repositories/OrderRepository.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/MexicanFood.Core/ApplicationService/Implementation/MealService.cs" root0="FORCE_HIGHLIGHTING" />
@@ -289,11 +247,12 @@
         <option value="$PROJECT_DIR$/MexicanFood.Infrastructure.Data/Repositories/MexicanFoodContext.cs" />
         <option value="$PROJECT_DIR$/MexicanFood.Core/ApplicationService/IMealService.cs" />
         <option value="$PROJECT_DIR$/MexicanFood.Infrastructure.Data/Repositories/MealRepository.cs" />
-        <option value="$PROJECT_DIR$/MexicanFood.Infrastructure.Data/Repositories/UserRepository.cs" />
         <option value="$PROJECT_DIR$/MexicanFood.XUnitTest/ApplicationService/Implementation/MealServiceTest.cs" />
         <option value="$PROJECT_DIR$/MexicanFood.RestApi/Controllers/MealsController.cs" />
         <option value="$PROJECT_DIR$/MexicanFood.Core/DomainService/IRepository.cs" />
         <option value="$PROJECT_DIR$/MexicanFood.Core/ApplicationService/Implementation/MealService.cs" />
+        <option value="$PROJECT_DIR$/MexicanFood.Infrastructure.Data/Repositories/OrderRepository.cs" />
+        <option value="$PROJECT_DIR$/MexicanFood.Infrastructure.Data/Repositories/UserRepository.cs" />
       </list>
     </option>
   </component>
@@ -303,7 +262,7 @@
     <detection-done>true</detection-done>
     <sorting>DEFINITION_ORDER</sorting>
   </component>
-  <component name="ProjectFrameBounds" extendedState="6">
+  <component name="ProjectFrameBounds" extendedState="7">
     <option name="x" value="-8" />
     <option name="y" value="-8" />
     <option name="width" value="1936" />
@@ -458,7 +417,7 @@
       </list>
     </option>
   </component>
-  <component name="RunManager" selected=".NET Project.Default">
+  <component name="RunManager">
     <configuration name="Default" type="DotNetProject" factoryName=".NET Project">
       <option name="EXE_PATH" value="" />
       <option name="PROGRAM_PARAMETERS" value="" />
@@ -477,9 +436,6 @@
         <option name="Build" enabled="true" />
       </method>
     </configuration>
-    <list>
-      <item itemvalue=".NET Project.Default" />
-    </list>
   </component>
   <component name="SvnConfiguration">
     <configuration />
@@ -497,7 +453,7 @@
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="12604000" />
+    <option name="totallyTimeSpent" value="12649000" />
   </component>
   <component name="TodoView">
     <todo-panel id="selected-file">
@@ -509,13 +465,12 @@
     </todo-panel>
   </component>
   <component name="ToolWindowManager">
-    <frame x="-8" y="-8" width="1936" height="1056" extended-state="6" />
+    <frame x="-8" y="-8" width="1936" height="1056" extended-state="7" />
     <editor active="true" />
     <layout>
-      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.15405117" />
+      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.15405117" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info id="Favorites" order="2" side_tool="true" />
-      <window_info anchor="bottom" id="Build" />
       <window_info anchor="bottom" id="Message" order="0" />
       <window_info anchor="bottom" id="Find" order="1" />
       <window_info anchor="bottom" id="Run" order="2" />
@@ -527,17 +482,18 @@
       <window_info anchor="bottom" id="Docker" order="8" show_stripe_button="false" />
       <window_info anchor="bottom" id="Version Control" order="9" show_stripe_button="false" />
       <window_info anchor="bottom" id="Database Changes" order="10" show_stripe_button="false" />
-      <window_info active="true" anchor="bottom" id="Unit Tests" order="11" visible="true" weight="0.329718" />
+      <window_info anchor="bottom" id="Unit Tests" order="11" visible="true" weight="0.329718" />
       <window_info anchor="bottom" id="REST Client" order="12" />
       <window_info anchor="bottom" id="TeamCity" order="13" />
       <window_info anchor="bottom" id="Terminal" order="14" />
       <window_info anchor="bottom" id="Event Log" order="15" side_tool="true" />
-      <window_info anchor="right" id="Unit Tests Coverage" />
+      <window_info anchor="bottom" id="Build" order="16" />
       <window_info anchor="right" id="Commander" internal_type="SLIDING" order="0" type="SLIDING" weight="0.4" />
       <window_info anchor="right" id="Ant Build" order="1" weight="0.25" />
       <window_info anchor="right" content_ui="combo" id="Hierarchy" order="2" weight="0.25" />
       <window_info anchor="right" id="Errors In Solution" order="3" />
       <window_info anchor="right" id="Database" order="4" />
+      <window_info anchor="right" id="Unit Tests Coverage" order="5" />
     </layout>
     <layout-to-restore>
       <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.15405117" />
@@ -623,18 +579,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/MexicanFood.Infrastructure.Data/Repositories/UserRepository.cs">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="120">
-          <caret line="8" column="5" lean-forward="true" selection-start-line="8" selection-start-column="5" selection-end-line="8" selection-end-column="5" />
-          <folding>
-            <marker date="1543389413650" expanded="true" signature="6:65" ph="..." />
-            <marker date="1543389413650" expanded="true" signature="121:183" ph="{...}" />
-            <marker date="1543389413650" expanded="true" signature="172:181" ph="{...}" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/MexicanFood.RestApi/Controllers/UsersController.cs">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="150">
@@ -652,25 +596,14 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/MexicanFood.Infrastructure.Data/Repositories/OrderRepository.cs">
-      <provider selected="true" editor-type-id="text-editor">
-        <state>
-          <folding>
-            <marker date="1543317793791" expanded="false" signature="6:137" ph="..." />
-            <marker date="1543317793791" expanded="true" signature="193:263" ph="{...}" />
-            <marker date="1543317793791" expanded="true" signature="248:261" ph="{...}" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/MexicanFood.Core/ApplicationService/IMealService.cs">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="255">
           <caret line="17" column="1" selection-start-line="17" selection-start-column="1" selection-end-line="17" selection-end-column="1" />
           <folding>
-            <marker date="1543391935650" expanded="true" signature="6:61" ph="..." />
-            <marker date="1543391935650" expanded="true" signature="108:348" ph="{...}" />
-            <marker date="1543391935650" expanded="true" signature="144:346" ph="{...}" />
+            <marker date="1543400753136" expanded="true" signature="6:61" ph="..." />
+            <marker date="1543400753136" expanded="true" signature="108:348" ph="{...}" />
+            <marker date="1543400753136" expanded="true" signature="144:346" ph="{...}" />
           </folding>
         </state>
       </provider>
@@ -679,21 +612,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="477">
           <caret line="50" column="57" selection-start-line="50" selection-start-column="57" selection-end-line="50" selection-end-column="57" />
-          <folding>
-            <marker date="1543400243728" expanded="true" signature="6:150" ph="..." />
-            <marker date="1543400243728" expanded="true" signature="193:1896" ph="{...}" />
-            <marker date="1543400243728" expanded="true" signature="297:1894" ph="{...}" />
-            <marker date="1543400243728" expanded="true" signature="405:465" ph="{...}" />
-            <marker date="1543400243728" expanded="true" signature="564:787" ph="{...}" />
-            <marker date="1543400243728" expanded="true" signature="590:670" ph="{...}" />
-            <marker date="1543400243728" expanded="true" signature="702:776" ph="{...}" />
-            <marker date="1543400243728" expanded="true" signature="888:1052" ph="{...}" />
-            <marker date="1543400243728" expanded="true" signature="1160:1388" ph="{...}" />
-            <marker date="1543400243728" expanded="true" signature="1186:1272" ph="{...}" />
-            <marker date="1543400243728" expanded="true" signature="1304:1378" ph="{...}" />
-            <marker date="1543400243728" expanded="true" signature="1511:1712" ph="{...}" />
-            <marker date="1543400243728" expanded="true" signature="1822:1888" ph="{...}" />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -712,87 +630,98 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="345">
           <caret line="25" column="48" selection-start-line="25" selection-start-column="48" selection-end-line="25" selection-end-column="48" />
-          <folding>
-            <marker date="1543390724610" expanded="false" signature="6:97" ph="..." />
-            <marker date="1543390724610" expanded="true" signature="153:810" ph="{...}" />
-            <marker date="1543390724610" expanded="true" signature="203:808" ph="{...}" />
-            <marker date="1543390724610" expanded="true" signature="297:317" ph="{...}" />
-            <marker date="1543390724610" expanded="true" signature="401:658" ph="/* protected override void OnModelCreating(ModelBuilder modelBuilder) ... */" />
-          </folding>
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/MexicanFood.Core/ApplicationService/Implementation/MealService.cs">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="582">
-          <caret line="39" column="47" selection-start-line="39" selection-start-column="47" selection-end-line="39" selection-end-column="47" />
+        <state relative-caret-position="792">
+          <caret line="53" column="5" selection-start-line="53" selection-start-column="5" selection-end-line="53" selection-end-column="5" />
           <folding>
-            <marker date="1543400243748" expanded="true" signature="6:149" ph="..." />
-            <marker date="1543400243748" expanded="true" signature="211:1485" ph="{...}" />
-            <marker date="1543400243748" expanded="true" signature="257:1483" ph="{...}" />
-            <marker date="1543400243748" expanded="true" signature="385:451" ph="{...}" />
-            <marker date="1543400243748" expanded="true" signature="497:580" ph="{...}" />
-            <marker date="1543400243748" expanded="true" signature="623:699" ph="{...}" />
-            <marker date="1543400243748" expanded="true" signature="742:1238" ph="{...}" />
-            <marker date="1543400243748" expanded="true" signature="1295:1364" ph="{...}" />
-            <marker date="1543400243748" expanded="true" signature="1404:1477" ph="{...}" />
+            <marker date="1543400753141" expanded="true" signature="6:61" ph="..." />
           </folding>
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/MexicanFood.Core/DomainService/IRepository.cs">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="135">
-          <caret line="11" selection-start-line="11" selection-end-line="11" />
+        <state relative-caret-position="90">
+          <caret line="8" selection-start-line="8" selection-end-line="8" />
           <folding>
-            <marker date="1543400243706" expanded="false" signature="6:66" ph="..." />
-            <marker date="1543400243706" expanded="true" signature="108:349" ph="{...}" />
-            <marker date="1543400243706" expanded="true" signature="146:347" ph="{...}" />
+            <marker date="1543400753142" expanded="false" signature="6:66" ph="..." />
+            <marker date="1543400753142" expanded="true" signature="108:349" ph="{...}" />
+            <marker date="1543400753142" expanded="true" signature="146:347" ph="{...}" />
           </folding>
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/MexicanFood.Infrastructure.Data/Repositories/MealRepository.cs">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="570">
-          <caret line="38" column="31" selection-start-line="38" selection-start-column="31" selection-end-line="38" selection-end-column="31" />
+        <state relative-caret-position="720">
+          <caret line="48" column="5" selection-start-line="48" selection-start-column="5" selection-end-line="48" selection-end-column="5" />
           <folding>
-            <marker date="1543394839639" expanded="true" signature="6:155" ph="..." />
-            <marker date="1543394839639" expanded="true" signature="211:1283" ph="{...}" />
-            <marker date="1543394839639" expanded="true" signature="265:1281" ph="{...}" />
-            <marker date="1543394839639" expanded="true" signature="368:412" ph="{...}" />
-            <marker date="1543394839639" expanded="true" signature="464:515" ph="{...}" />
-            <marker date="1543394839639" expanded="true" signature="560:649" ph="{...}" />
-            <marker date="1543394839639" expanded="true" signature="694:799" ph="{...}" />
-            <marker date="1543394839639" expanded="true" signature="858:1087" ph="{...}" />
-            <marker date="1543394839639" expanded="true" signature="1129:1275" ph="{...}" />
+            <marker date="1543400753155" expanded="true" signature="6:78" ph="..." />
           </folding>
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/MexicanFood.XUnitTest/ApplicationService/Implementation/MealServiceTest.cs">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="237">
-          <caret line="100" column="20" selection-start-line="100" selection-start-column="20" selection-end-line="100" selection-end-column="20" />
+        <state relative-caret-position="1935">
+          <caret line="174" column="1" selection-start-line="174" selection-start-column="1" selection-end-line="174" selection-end-column="1" />
           <folding>
-            <marker date="1543397711438" expanded="true" signature="6:221" ph="..." />
-            <marker date="1543397711438" expanded="true" signature="254:5461" ph="{...}" />
-            <marker date="1543397711438" expanded="true" signature="289:5459" ph="{...}" />
-            <marker date="1543397711438" expanded="true" signature="369:1213" ph="{...}" />
-            <marker date="1543397711438" expanded="true" signature="717:1045" ph="{...}" />
-            <marker date="1543397711438" expanded="true" signature="815:911" ph="{...}" />
-            <marker date="1543397711438" expanded="true" signature="1294:2189" ph="{...}" />
-            <marker date="1543397711438" expanded="true" signature="1642:2006" ph="{...}" />
-            <marker date="1543397711438" expanded="true" signature="1695:1873" ph="/* Ingredients = new string[] ... */" />
-            <marker date="1543397711438" expanded="true" signature="2265:3110" ph="{...}" />
-            <marker date="1543397711438" expanded="true" signature="2613:2941" ph="{...}" />
-            <marker date="1543397711438" expanded="true" signature="2709:2805" ph="{...}" />
-            <marker date="1543397711438" expanded="true" signature="3185:3559" ph="{...}" />
-            <marker date="1543397711438" expanded="true" signature="3647:4028" ph="{...}" />
-            <marker date="1543397711438" expanded="true" signature="4117:4930" ph="{...}" />
-            <marker date="1543397711438" expanded="true" signature="4465:4793" ph="{...}" />
-            <marker date="1543397711438" expanded="true" signature="4561:4657" ph="{...}" />
-            <marker date="1543397711438" expanded="true" signature="5081:5453" ph="{...}" />
+            <marker date="1543400753193" expanded="true" signature="6:221" ph="..." />
+            <marker date="1543400753193" expanded="true" signature="254:5461" ph="{...}" />
+            <marker date="1543400753193" expanded="true" signature="289:5459" ph="{...}" />
+            <marker date="1543400753193" expanded="true" signature="369:1213" ph="{...}" />
+            <marker date="1543400753193" expanded="true" signature="717:1045" ph="{...}" />
+            <marker date="1543400753193" expanded="true" signature="815:911" ph="{...}" />
+            <marker date="1543400753193" expanded="true" signature="1294:2189" ph="{...}" />
+            <marker date="1543400753193" expanded="true" signature="1642:2006" ph="{...}" />
+            <marker date="1543400753193" expanded="true" signature="1695:1873" ph="/* Ingredients = new string[] ... */" />
+            <marker date="1543400753193" expanded="true" signature="2265:3110" ph="{...}" />
+            <marker date="1543400753193" expanded="true" signature="2613:2941" ph="{...}" />
+            <marker date="1543400753193" expanded="true" signature="2709:2805" ph="{...}" />
+            <marker date="1543400753193" expanded="true" signature="3185:3559" ph="{...}" />
+            <marker date="1543400753193" expanded="true" signature="3647:4028" ph="{...}" />
+            <marker date="1543400753193" expanded="true" signature="4117:4930" ph="{...}" />
+            <marker date="1543400753193" expanded="true" signature="4465:4793" ph="{...}" />
+            <marker date="1543400753193" expanded="true" signature="4561:4657" ph="{...}" />
+            <marker date="1543400753193" expanded="true" signature="5081:5453" ph="{...}" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/MexicanFood.Infrastructure.Data/Repositories/OrderRepository.cs">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="120">
+          <caret line="12" column="48" selection-start-line="12" selection-start-column="12" selection-end-line="12" selection-end-column="48" />
+          <folding>
+            <marker date="1543400804904" expanded="false" signature="6:137" ph="..." />
+            <marker date="1543400804904" expanded="true" signature="193:854" ph="{...}" />
+            <marker date="1543400804904" expanded="true" signature="248:852" ph="{...}" />
+            <marker date="1543400804904" expanded="true" signature="306:375" ph="{...}" />
+            <marker date="1543400804904" expanded="true" signature="421:490" ph="{...}" />
+            <marker date="1543400804904" expanded="true" signature="539:608" ph="{...}" />
+            <marker date="1543400804904" expanded="true" signature="665:734" ph="{...}" />
+            <marker date="1543400804904" expanded="true" signature="777:846" ph="{...}" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/MexicanFood.Infrastructure.Data/Repositories/UserRepository.cs">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="143">
+          <caret line="10" column="55" selection-start-line="10" selection-start-column="12" selection-end-line="10" selection-end-column="55" />
+          <folding>
+            <marker date="1543400804930" expanded="true" signature="6:99" ph="..." />
+            <marker date="1543400804930" expanded="true" signature="155:699" ph="{...}" />
+            <marker date="1543400804930" expanded="true" signature="206:697" ph="{...}" />
+            <marker date="1543400804930" expanded="true" signature="254:309" ph="{...}" />
+            <marker date="1543400804930" expanded="true" signature="348:403" ph="{...}" />
+            <marker date="1543400804930" expanded="true" signature="444:499" ph="{...}" />
+            <marker date="1543400804930" expanded="true" signature="548:603" ph="{...}" />
+            <marker date="1543400804930" expanded="true" signature="639:694" ph="{...}" />
           </folding>
         </state>
       </provider>
