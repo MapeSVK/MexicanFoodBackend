@@ -12,4 +12,9 @@
         <PackageReference Include="Microsoft.AspNetCore.App" />
     </ItemGroup>
 
+    <ItemGroup>
+      <ProjectReference Include="..\MexicanFood.Core\MexicanFood.Core.csproj" />
+      <ProjectReference Include="..\MexicanFood.Entities\MexicanFood.Core.Entities.csproj" />
+    </ItemGroup>
+
 </Project>

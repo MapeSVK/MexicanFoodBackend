@@ -14,7 +14,14 @@
     ],
     "frameworks": {
       "netcoreapp2.1": {
-        "projectReferences": {}
+        "projectReferences": {
+          "C:\\Users\\Jesper\\Desktop\\VisualStudioProjects\\MexicanFoodBackend\\MexicanFood.Core\\MexicanFood.Core.csproj": {
+            "projectPath": "C:\\Users\\Jesper\\Desktop\\VisualStudioProjects\\MexicanFoodBackend\\MexicanFood.Core\\MexicanFood.Core.csproj"
+          },
+          "C:\\Users\\Jesper\\Desktop\\VisualStudioProjects\\MexicanFoodBackend\\MexicanFood.Entities\\MexicanFood.Core.Entities.csproj": {
+            "projectPath": "C:\\Users\\Jesper\\Desktop\\VisualStudioProjects\\MexicanFoodBackend\\MexicanFood.Entities\\MexicanFood.Core.Entities.csproj"
+          }
+        }
       }
     },
     "warningProperties": {

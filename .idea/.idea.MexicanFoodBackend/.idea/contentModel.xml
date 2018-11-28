@@ -59,6 +59,7 @@
         </e>
         <e p="Repositories" t="Include">
           <e p="MealRepository.cs" t="Include" />
+          <e p="MexicanFoodContext.cs" t="Include" />
           <e p="OrderRepository.cs" t="Include" />
           <e p="UserRepository.cs" t="Include" />
         </e>
@@ -68,6 +69,7 @@
         <e p="appsettings.json" t="Include" />
         <e p="bin" t="ExcludeRecursive" />
         <e p="Controllers" t="Include">
+          <e p="MealsController.cs" t="Include" />
           <e p="UsersController.cs" t="Include" />
         </e>
         <e p="MexicanFood.RestApi.csproj" t="IncludeRecursive" />

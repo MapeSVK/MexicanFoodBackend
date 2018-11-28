@@ -4333,6 +4333,29 @@
         "runtime": {
           "lib/netstandard1.3/System.Xml.XPath.XDocument.dll": {}
         }
+      },
+      "MexicanFood.Core/1.0.0": {
+        "type": "project",
+        "framework": ".NETStandard,Version=v2.0",
+        "dependencies": {
+          "MexicanFood.Core.Entities": "1.0.0"
+        },
+        "compile": {
+          "bin/placeholder/MexicanFood.Core.dll": {}
+        },
+        "runtime": {
+          "bin/placeholder/MexicanFood.Core.dll": {}
+        }
+      },
+      "MexicanFood.Core.Entities/1.0.0": {
+        "type": "project",
+        "framework": ".NETStandard,Version=v2.0",
+        "compile": {
+          "bin/placeholder/MexicanFood.Core.Entities.dll": {}
+        },
+        "runtime": {
+          "bin/placeholder/MexicanFood.Core.Entities.dll": {}
+        }
       }
     }
   },
@@ -11491,10 +11514,22 @@
         "system.xml.xpath.xdocument.4.3.0.nupkg.sha512",
         "system.xml.xpath.xdocument.nuspec"
       ]
+    },
+    "MexicanFood.Core/1.0.0": {
+      "type": "project",
+      "path": "../MexicanFood.Core/MexicanFood.Core.csproj",
+      "msbuildProject": "../MexicanFood.Core/MexicanFood.Core.csproj"
+    },
+    "MexicanFood.Core.Entities/1.0.0": {
+      "type": "project",
+      "path": "../MexicanFood.Entities/MexicanFood.Core.Entities.csproj",
+      "msbuildProject": "../MexicanFood.Entities/MexicanFood.Core.Entities.csproj"
     }
   },
   "projectFileDependencyGroups": {
     ".NETCoreApp,Version=v2.1": [
+      "MexicanFood.Core >= 1.0.0",
+      "MexicanFood.Core.Entities >= 1.0.0",
       "Microsoft.AspNetCore.App >= 2.1.1",
       "Microsoft.NETCore.App >= 2.1.0"
     ]
@@ -11528,7 +11563,14 @@
       },
       "frameworks": {
         "netcoreapp2.1": {
-          "projectReferences": {}
+          "projectReferences": {
+            "C:\\Users\\Jesper\\Desktop\\VisualStudioProjects\\MexicanFoodBackend\\MexicanFood.Core\\MexicanFood.Core.csproj": {
+              "projectPath": "C:\\Users\\Jesper\\Desktop\\VisualStudioProjects\\MexicanFoodBackend\\MexicanFood.Core\\MexicanFood.Core.csproj"
+            },
+            "C:\\Users\\Jesper\\Desktop\\VisualStudioProjects\\MexicanFoodBackend\\MexicanFood.Entities\\MexicanFood.Core.Entities.csproj": {
+              "projectPath": "C:\\Users\\Jesper\\Desktop\\VisualStudioProjects\\MexicanFoodBackend\\MexicanFood.Entities\\MexicanFood.Core.Entities.csproj"
+            }
+          }
         }
       },
       "warningProperties": {
