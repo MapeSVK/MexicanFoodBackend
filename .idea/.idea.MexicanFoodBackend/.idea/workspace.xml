@@ -69,8 +69,8 @@
             <state relative-caret-position="150">
               <caret line="10" selection-start-line="10" selection-end-line="10" />
               <folding>
-                <marker date="1543401239633" expanded="true" signature="191:194" ph="{...}" />
-                <marker date="1543401239633" expanded="true" signature="191:196" ph="{...}" />
+                <marker date="1543401727812" expanded="true" signature="191:194" ph="{...}" />
+                <marker date="1543401727812" expanded="true" signature="191:196" ph="{...}" />
               </folding>
             </state>
           </provider>
@@ -103,7 +103,8 @@
       <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/MexicanFood.RestApi/Controllers/UsersController.cs">
           <provider selected="true" editor-type-id="text-editor">
-            <state>
+            <state relative-caret-position="330">
+              <caret line="26" column="26" selection-start-line="26" selection-start-column="26" selection-end-line="26" selection-end-column="26" />
               <folding>
                 <marker date="1542802598532" expanded="false" signature="6:128" ph="..." />
                 <marker date="1542802598532" expanded="true" signature="171:795" ph="{...}" />
@@ -137,7 +138,7 @@
             <state relative-caret-position="-120">
               <caret line="9" column="5" selection-start-line="9" selection-start-column="5" selection-end-line="9" selection-end-column="5" />
               <folding>
-                <marker date="1543401239595" expanded="false" signature="6:61" ph="..." />
+                <marker date="1543401727771" expanded="false" signature="6:61" ph="..." />
               </folding>
             </state>
           </provider>
@@ -162,7 +163,7 @@
             <state relative-caret-position="165">
               <caret line="11" selection-start-line="11" selection-end-line="11" />
               <folding>
-                <marker date="1543401239590" expanded="false" signature="6:12" ph="..." />
+                <marker date="1543401727768" expanded="false" signature="6:12" ph="..." />
               </folding>
             </state>
           </provider>
@@ -427,7 +428,7 @@
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="1955000" />
+    <option name="totallyTimeSpent" value="1963000" />
   </component>
   <component name="TodoView">
     <todo-panel id="selected-file">
@@ -440,6 +441,7 @@
   </component>
   <component name="ToolWindowManager">
     <frame x="-8" y="-8" width="1936" height="1056" extended-state="6" />
+    <editor active="true" />
     <layout>
       <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.15405117" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
@@ -552,15 +554,16 @@
         <state relative-caret-position="150">
           <caret line="10" selection-start-line="10" selection-end-line="10" />
           <folding>
-            <marker date="1543401239633" expanded="true" signature="191:194" ph="{...}" />
-            <marker date="1543401239633" expanded="true" signature="191:196" ph="{...}" />
+            <marker date="1543401727812" expanded="true" signature="191:194" ph="{...}" />
+            <marker date="1543401727812" expanded="true" signature="191:196" ph="{...}" />
           </folding>
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/MexicanFood.RestApi/Controllers/UsersController.cs">
       <provider selected="true" editor-type-id="text-editor">
-        <state>
+        <state relative-caret-position="330">
+          <caret line="26" column="26" selection-start-line="26" selection-start-column="26" selection-end-line="26" selection-end-column="26" />
           <folding>
             <marker date="1542802598532" expanded="false" signature="6:128" ph="..." />
             <marker date="1542802598532" expanded="true" signature="171:795" ph="{...}" />
