@@ -1,13 +1,13 @@
 ﻿{
   "version": "1.0.0",
   "restore": {
-    "projectUniqueName": "/Users/Mape/GitClonePath/MexicanFoodBackend/MexicanFood.Core/MexicanFood.Core.csproj",
+    "projectUniqueName": "C:\\Users\\Jesper\\Desktop\\VisualStudioProjects\\MexicanFoodBackend\\MexicanFood.Core\\MexicanFood.Core.csproj",
     "projectName": "MexicanFood.Core",
-    "projectPath": "/Users/Mape/GitClonePath/MexicanFoodBackend/MexicanFood.Core/MexicanFood.Core.csproj",
-    "outputPath": "/Users/Mape/GitClonePath/MexicanFoodBackend/MexicanFood.Core/obj/",
+    "projectPath": "C:\\Users\\Jesper\\Desktop\\VisualStudioProjects\\MexicanFoodBackend\\MexicanFood.Core\\MexicanFood.Core.csproj",
+    "outputPath": "C:\\Users\\Jesper\\Desktop\\VisualStudioProjects\\MexicanFoodBackend\\MexicanFood.Core\\obj\\",
     "projectStyle": "PackageReference",
     "fallbackFolders": [
-      "/usr/local/share/dotnet/sdk/NuGetFallbackFolder"
+      "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder"
     ],
     "originalTargetFrameworks": [
       "netstandard2.0"
@@ -15,8 +15,8 @@
     "frameworks": {
       "netstandard2.0": {
         "projectReferences": {
-          "/Users/Mape/GitClonePath/MexicanFoodBackend/MexicanFood.Entities/MexicanFood.Core.Entities.csproj": {
-            "projectPath": "/Users/Mape/GitClonePath/MexicanFoodBackend/MexicanFood.Entities/MexicanFood.Core.Entities.csproj"
+          "C:\\Users\\Jesper\\Desktop\\VisualStudioProjects\\MexicanFoodBackend\\MexicanFood.Entities\\MexicanFood.Core.Entities.csproj": {
+            "projectPath": "C:\\Users\\Jesper\\Desktop\\VisualStudioProjects\\MexicanFoodBackend\\MexicanFood.Entities\\MexicanFood.Core.Entities.csproj"
           }
         }
       }
