@@ -1,9 +1,0 @@
-C:\Users\Jesper\Desktop\VisualStudioProjects\MexicanFoodBackend\MexicanFood.Entities\bin\Debug\netstandard2.0\MexicanFood.Core.Entities.deps.json
-C:\Users\Jesper\Desktop\VisualStudioProjects\MexicanFoodBackend\MexicanFood.Entities\bin\Debug\netstandard2.0\MexicanFood.Core.Entities.dll
-C:\Users\Jesper\Desktop\VisualStudioProjects\MexicanFoodBackend\MexicanFood.Entities\bin\Debug\netstandard2.0\MexicanFood.Core.Entities.pdb
-C:\Users\Jesper\Desktop\VisualStudioProjects\MexicanFoodBackend\MexicanFood.Entities\obj\Debug\netstandard2.0\MexicanFood.Core.Entities.csprojAssemblyReference.cache
-C:\Users\Jesper\Desktop\VisualStudioProjects\MexicanFoodBackend\MexicanFood.Entities\obj\Debug\netstandard2.0\MexicanFood.Core.Entities.csproj.CoreCompileInputs.cache
-C:\Users\Jesper\Desktop\VisualStudioProjects\MexicanFoodBackend\MexicanFood.Entities\obj\Debug\netstandard2.0\MexicanFood.Core.Entities.AssemblyInfoInputs.cache
-C:\Users\Jesper\Desktop\VisualStudioProjects\MexicanFoodBackend\MexicanFood.Entities\obj\Debug\netstandard2.0\MexicanFood.Core.Entities.AssemblyInfo.cs
-C:\Users\Jesper\Desktop\VisualStudioProjects\MexicanFoodBackend\MexicanFood.Entities\obj\Debug\netstandard2.0\MexicanFood.Core.Entities.dll
-C:\Users\Jesper\Desktop\VisualStudioProjects\MexicanFoodBackend\MexicanFood.Entities\obj\Debug\netstandard2.0\MexicanFood.Core.Entities.pdb
