@@ -13,7 +13,7 @@ namespace MexicanFood.XUnitTest
 {
     public class MealServiceTest
     {
-        [Fact]
+        /*[Fact]
         public void CreateMealNameMissingThrowsException()
         {
             var mealRepository = new Mock<IRepository<Meal>>();
@@ -34,7 +34,7 @@ namespace MexicanFood.XUnitTest
             Exception ex = Assert.Throws<InvalidDataException>(() => service.CreateMeal(meal));
 
             Assert.Equal("Meal needs a name", ex.Message);
-        }
+        }*/
 
         [Fact]
         public void CreateMealIngredientMissingThrowsException()
@@ -149,7 +149,7 @@ namespace MexicanFood.XUnitTest
             Exception ex = Assert.Throws<InvalidDataException>(() => service.CreateMeal(meal));
 
             Assert.Equal("Meal needs a price", ex.Message);
-        }
+        }*/
 
         [Fact]
         public void GetMealsShouldCallMealRepositoryOnce()
@@ -179,7 +179,7 @@ namespace MexicanFood.XUnitTest
             mealRepository.Verify(m => m.EntityFoundById(1), Times.Once);
         }
 
-        [Fact]
+        /*[Fact]
         public void CreateMealShouldCallMealRepositoryCreateEntityOnce()
         {
             var mealRepository = new Mock<IRepository<Meal>>();
@@ -200,7 +200,7 @@ namespace MexicanFood.XUnitTest
             service.CreateMeal(meal);
 
             mealRepository.Verify(m => m.CreateEntity(It.IsAny<Meal>()), Times.Once);
-        }
+        }*/
 
         [Fact]
         public void UpdateMealShouldCallMealRepositoryCreateEntityOnce()
