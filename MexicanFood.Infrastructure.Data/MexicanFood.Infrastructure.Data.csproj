@@ -9,4 +9,11 @@
       <ProjectReference Include="..\MexicanFood.Entities\MexicanFood.Core.Entities.csproj" />
     </ItemGroup>
 
+    <ItemGroup>
+      <PackageReference Include="Microsoft.EntityFrameworkCore" Version="2.1.4" />
+      <PackageReference Include="Microsoft.EntityFrameworkCore.Design" Version="2.1.4" />
+      <PackageReference Include="Microsoft.EntityFrameworkCore.Sqlite" Version="2.1.4" />
+      <PackageReference Include="Microsoft.EntityFrameworkCore.SqlServer" Version="2.1.4" />
+    </ItemGroup>
+
 </Project>
