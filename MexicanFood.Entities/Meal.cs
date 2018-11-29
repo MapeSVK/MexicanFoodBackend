@@ -1,4 +1,5 @@
-﻿using System;
+﻿using MexicanFood.Core.Entities;
+using System;
 using System.Collections.Generic;
 using System.Text;
 
