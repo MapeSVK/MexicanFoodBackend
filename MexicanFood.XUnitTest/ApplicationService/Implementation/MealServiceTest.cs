@@ -1,5 +1,7 @@
 using System;
+using System.Collections.Generic;
 using System.IO;
+using System.Linq;
 using MexicanFood.Core.ApplicationService;
 using MexicanFood.Core.ApplicationService.Implementation;
 using MexicanFood.Core.DomainService;
@@ -15,20 +17,15 @@ namespace MexicanFood.XUnitTest
         public void CreateMealNameMissingThrowsException()
         {
             var mealRepository = new Mock<IRepository<Meal>>();
-
-            //Need to understand this better
-            mealRepository.Setup(m => m.EntityFoundById(It.IsAny<int>())).Returns(new Meal() {Id = 1});
+            
+            mealRepository.Setup(m => m.EntityFoundById(It.IsAny<int>())).Returns(new Meal() { Id = 1 });
 
             IMealService service = new MealService(mealRepository.Object);
 
             var meal = new Meal()
             {
                 //Name = "testMeal",
-                Ingredients = new string[]
-                {
-                    "testIngredient1",
-                    "testIngredient2"
-                },
+                Ingredients = "pictureString",
                 Description = "testDescription",
                 Picture = "pictureString",
                 Price = 10
@@ -43,22 +40,15 @@ namespace MexicanFood.XUnitTest
         public void CreateMealIngredientMissingThrowsException()
         {
             var mealRepository = new Mock<IRepository<Meal>>();
-
-            //Need to understand this better
-            mealRepository.Setup(m => m.EntityFoundById(It.IsAny<int>())).Returns(new Meal() {Id = 1});
+            
+            mealRepository.Setup(m => m.EntityFoundById(It.IsAny<int>())).Returns(new Meal() { Id = 1 });
 
             IMealService service = new MealService(mealRepository.Object);
 
             var meal = new Meal()
             {
                 Name = "testMeal",
-                /*
-                Ingredients = new string[]
-                {
-                    "testIngredient1",
-                    "testIngredient2"
-                },
-                */
+                //Ingredients = "pictureString",
                 Description = "testDescription",
                 Picture = "pictureString",
                 Price = 10
@@ -70,23 +60,87 @@ namespace MexicanFood.XUnitTest
         }
 
         [Fact]
-        public void CreateMealPriceMissingThrowsException()
+        public void UpdateMealPriceMissingThrowsException()
         {
             var mealRepository = new Mock<IRepository<Meal>>();
-
-            //Need to understand this better
-            mealRepository.Setup(m => m.EntityFoundById(It.IsAny<int>())).Returns(new Meal() {Id = 1});
+            
+            mealRepository.Setup(m => m.EntityFoundById(It.IsAny<int>())).Returns(new Meal() { Id = 1 });
 
             IMealService service = new MealService(mealRepository.Object);
 
             var meal = new Meal()
             {
                 Name = "testMeal",
-                Ingredients = new string[]
-                {
-                    "testIngredient1",
-                    "testIngredient2"
-                },
+                Ingredients = "pictureString",
+                Description = "testDescription",
+                Picture = "pictureString",
+                //Price = 10
+            };
+
+            Exception ex = Assert.Throws<InvalidDataException>(() => service.UpdateMeal(1, meal));
+
+            Assert.Equal("Meal needs a price", ex.Message);
+        }
+
+        [Fact]
+        public void UpdateMealNameMissingThrowsException()
+        {
+            var mealRepository = new Mock<IRepository<Meal>>();
+            
+            mealRepository.Setup(m => m.EntityFoundById(It.IsAny<int>())).Returns(new Meal() { Id = 1 });
+
+            IMealService service = new MealService(mealRepository.Object);
+
+            var meal = new Meal()
+            {
+                //Name = "testMeal",
+                Ingredients = "pictureString",
+                Description = "testDescription",
+                Picture = "pictureString",
+                Price = 10
+            };
+
+            Exception ex = Assert.Throws<InvalidDataException>(() => service.UpdateMeal(1, meal));
+
+            Assert.Equal("Meal needs a name", ex.Message);
+        }
+
+        [Fact]
+        public void UpdateMealIngredientMissingThrowsException()
+        {
+            var mealRepository = new Mock<IRepository<Meal>>();
+
+            mealRepository.Setup(m => m.EntityFoundById(It.IsAny<int>())).Returns(new Meal() { Id = 1 });
+
+            IMealService service = new MealService(mealRepository.Object);
+
+            var meal = new Meal()
+            {
+                Name = "testMeal",
+                //Ingredients = "pictureString",
+                Description = "testDescription",
+                Picture = "pictureString",
+                Price = 10
+            };
+
+            Exception ex = Assert.Throws<InvalidDataException>(() => service.UpdateMeal(1, meal));
+
+            Assert.Equal("Meal needs at least 1 ingredient", ex.Message);
+        }
+
+        [Fact]
+        public void CreateMealPriceMissingThrowsException()
+        {
+            var mealRepository = new Mock<IRepository<Meal>>();
+
+            mealRepository.Setup(m => m.EntityFoundById(It.IsAny<int>())).Returns(new Meal() { Id = 1 });
+
+            IMealService service = new MealService(mealRepository.Object);
+
+            var meal = new Meal()
+            {
+                Name = "testMeal",
+                Ingredients = "pictureString",
                 Description = "testDescription",
                 Picture = "pictureString",
                 //Price = 10
@@ -97,29 +151,25 @@ namespace MexicanFood.XUnitTest
             Assert.Equal("Meal needs a price", ex.Message);
         }
 
-        /*
         [Fact]
         public void GetMealsShouldCallMealRepositoryOnce()
         {
             var mealRepository = new Mock<IRepository<Meal>>();
-
-            //Need to understand this better
-            mealRepository.Setup(m => m.ReadAllEntities());
+            
+            mealRepository.Setup(m => m.ReadAllEntities()).Returns(new List<Meal>());
 
             IMealService service = new MealService(mealRepository.Object);
-
-            service.GetMeals();
+           
+            service.GetMeals(); //goes wrong here
 
             mealRepository.Verify(m => m.ReadAllEntities(), Times.Once);
         }
-        */
-        
+
         [Fact]
         public void MealFoundByIdShouldCallMealRepositoryOnce()
         {
             var mealRepository = new Mock<IRepository<Meal>>();
-
-            //Need to understand this better
+            
             mealRepository.Setup(m => m.EntityFoundById(1));
 
             IMealService service = new MealService(mealRepository.Object);
@@ -133,20 +183,15 @@ namespace MexicanFood.XUnitTest
         public void CreateMealShouldCallMealRepositoryCreateEntityOnce()
         {
             var mealRepository = new Mock<IRepository<Meal>>();
-
-            //Need to understand this better
-            mealRepository.Setup(m => m.EntityFoundById(It.IsAny<int>())).Returns(new Meal() {Id = 1});
+            
+            mealRepository.Setup(m => m.EntityFoundById(It.IsAny<int>())).Returns(new Meal() { Id = 1 });
 
             IMealService service = new MealService(mealRepository.Object);
 
             var meal = new Meal()
             {
                 Name = "testMeal",
-                Ingredients = new string[]
-                {
-                    "testIngredient1",
-                    "testIngredient2"
-                },
+                Ingredients = "pictureString",
                 Description = "testDescription",
                 Picture = "pictureString",
                 Price = 10
@@ -157,14 +202,34 @@ namespace MexicanFood.XUnitTest
             mealRepository.Verify(m => m.CreateEntity(It.IsAny<Meal>()), Times.Once);
         }
 
-        //Need a updateCalledOnceTest but needs to resolve generic issue
+        [Fact]
+        public void UpdateMealShouldCallMealRepositoryCreateEntityOnce()
+        {
+            var mealRepository = new Mock<IRepository<Meal>>();
+            
+            mealRepository.Setup(m => m.EntityFoundById(It.IsAny<int>())).Returns(new Meal() { Id = 1 });
+
+            IMealService service = new MealService(mealRepository.Object);
+
+            var meal = new Meal()
+            {
+                Name = "testMeal",
+                Ingredients = "pictureString",
+                Description = "testDescription",
+                Picture = "pictureString",
+                Price = 10
+            };
+
+            service.UpdateMeal(1, meal);
+           
+            mealRepository.Verify(m => m.UpdateEntity(1, It.IsAny<Meal>()), Times.Once);
+        }
 
         [Fact]
         public void DeleteMealShouldCallMealRepositoryOnce()
         {
             var mealRepository = new Mock<IRepository<Meal>>();
-
-            //Need to understand this better
+            
             mealRepository.Setup(m => m.DeleteEntity(1));
 
             IMealService service = new MealService(mealRepository.Object);
