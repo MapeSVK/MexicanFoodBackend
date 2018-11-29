@@ -32,7 +32,7 @@ namespace MexicanFood.Infrastructure.Data.Repositories
             return meal;
         }
 
-        public Meal UpdateEntity(int id, Meal mealUpdate)
+        public Meal UpdateEntity(Meal mealUpdate)
         {
             _ctx.Attach(mealUpdate).State = EntityState.Modified;
             //_ctx.Entry(mealUpdate).Reference(o => o.Order).IsModified = true;

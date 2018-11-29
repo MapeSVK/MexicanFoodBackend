@@ -37,7 +37,7 @@ namespace MexicanFood.RestApi.Controllers
         public ActionResult<Meal> Get(int id)
         {
             if (id < 1)
-                return BadRequest("Id must be greater then 0");
+                return BadRequest("Id must be greater than 0");
 
             return Ok(_mealService.MealFoundById(id));
         }
@@ -70,7 +70,10 @@ namespace MexicanFood.RestApi.Controllers
         [HttpDelete("{id}")]
         public ActionResult<Meal> Delete(int id)
         {
-            return Ok("Meal with id: " + id);
+            var mDelete = _mealService.MealFoundById(id);
+            _mealService.DeleteMeal(mDelete.Id);
+
+            return Ok("Meal with id: " + id + " was deleted");
         }
     }
 }

@@ -53,7 +53,7 @@ namespace MexicanFood.Core.ApplicationService.Implementation
             if (mealUpdate.Price == 0)
                 throw new InvalidDataException("Meal needs a price");
             
-            return _mealRepository.UpdateEntity(id, mealUpdate);
+            return _mealRepository.UpdateEntity(mealUpdate);
         }
 
         public Meal DeleteMeal(int id)
