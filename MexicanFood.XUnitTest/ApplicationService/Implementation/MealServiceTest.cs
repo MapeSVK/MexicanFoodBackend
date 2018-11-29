@@ -149,7 +149,7 @@ namespace MexicanFood.XUnitTest
             Exception ex = Assert.Throws<InvalidDataException>(() => service.CreateMeal(meal));
 
             Assert.Equal("Meal needs a price", ex.Message);
-        }*/
+        }
 
         [Fact]
         public void GetMealsShouldCallMealRepositoryOnce()
