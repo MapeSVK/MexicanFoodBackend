@@ -32,9 +32,12 @@ namespace MexicanFood.RestApi
 		// This method gets called by the runtime. Use this method to add services to the container.
 		public void ConfigureServices(IServiceCollection services)
 		{
-			services.AddDbContext<MexicanFoodContext>(opt => opt.UseSqlite("Data Source=mexicanFood.db"));
-			
-			services.AddScoped<IRepository<Meal>, MealRepository>();
+            services.AddCors();
+
+            services.AddDbContext<MexicanFoodContext>(opt => opt.UseSqlite("Data Source=mexicanFood.db"));
+            services.AddDbContext<MexicanFoodContext>(opt => opt.UseSqlServer(Configuration.GetConnectionString("defaultConnection")));
+
+            services.AddScoped<IRepository<Meal>, MealRepository>();
 			services.AddScoped<IMealService, MealService>();
 			
 			services.AddMvc().AddJsonOptions(options => {
@@ -58,11 +61,17 @@ namespace MexicanFood.RestApi
 			}
 			else
 			{
-				app.UseHsts();
-			}
+				//app.UseHsts();
+                using (var scope = app.ApplicationServices.CreateScope())
+                {
+                    var ctx = scope.ServiceProvider.GetService<MexicanFoodContext>();
+                    ctx.Database.EnsureCreated();
+                }
+            }
 
-			//app.UseHttpsRedirection();
-			app.UseMvc();
+            app.UseCors(builder => builder.AllowAnyOrigin().AllowAnyMethod().AllowAnyHeader());
+            //app.UseHttpsRedirection();
+            app.UseMvc();
 		}
 	}
 }
