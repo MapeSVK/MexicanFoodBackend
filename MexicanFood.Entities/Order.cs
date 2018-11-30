@@ -14,6 +14,6 @@ namespace MexicanFood.Core.Entities
         public DateTime PickUpDateAndTime { get; set; }
         public DateTime OrderedDateAndTime { get; set; }
         public string Comment { get; set; }
-        public List<Meal> Meals { get; set; }
+        public List<OrderLine> OrderLines { get; set; }
     }
 }

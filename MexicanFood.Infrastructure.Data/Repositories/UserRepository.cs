@@ -21,7 +21,7 @@ namespace MexicanFood.Infrastructure.Data.Repositories
 			throw new System.NotImplementedException();
 		}
 
-		public User UpdateEntity(int id, User entity)
+		public User UpdateEntity(User entity)
 		{
 			throw new System.NotImplementedException();
 		}

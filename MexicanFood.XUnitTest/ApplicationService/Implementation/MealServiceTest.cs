@@ -13,7 +13,7 @@ namespace MexicanFood.XUnitTest
 {
     public class MealServiceTest
     {
-        /*[Fact]
+        [Fact]
         public void CreateMealNameMissingThrowsException()
         {
             var mealRepository = new Mock<IRepository<Meal>>();
@@ -34,7 +34,7 @@ namespace MexicanFood.XUnitTest
             Exception ex = Assert.Throws<InvalidDataException>(() => service.CreateMeal(meal));
 
             Assert.Equal("Meal needs a name", ex.Message);
-        }*/
+        }
 
         [Fact]
         public void CreateMealIngredientMissingThrowsException()
@@ -160,7 +160,7 @@ namespace MexicanFood.XUnitTest
 
             IMealService service = new MealService(mealRepository.Object);
            
-            service.GetMeals(); //goes wrong here
+            service.GetMeals();
 
             mealRepository.Verify(m => m.ReadAllEntities(), Times.Once);
         }
@@ -179,7 +179,7 @@ namespace MexicanFood.XUnitTest
             mealRepository.Verify(m => m.EntityFoundById(1), Times.Once);
         }
 
-        /*[Fact]
+        [Fact]
         public void CreateMealShouldCallMealRepositoryCreateEntityOnce()
         {
             var mealRepository = new Mock<IRepository<Meal>>();
@@ -200,7 +200,7 @@ namespace MexicanFood.XUnitTest
             service.CreateMeal(meal);
 
             mealRepository.Verify(m => m.CreateEntity(It.IsAny<Meal>()), Times.Once);
-        }*/
+        }
 
         [Fact]
         public void UpdateMealShouldCallMealRepositoryCreateEntityOnce()
@@ -222,7 +222,7 @@ namespace MexicanFood.XUnitTest
 
             service.UpdateMeal(1, meal);
            
-            mealRepository.Verify(m => m.UpdateEntity(1, It.IsAny<Meal>()), Times.Once);
+            mealRepository.Verify(m => m.UpdateEntity(It.IsAny<Meal>()), Times.Once);
         }
 
         [Fact]

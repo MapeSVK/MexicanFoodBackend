@@ -12,7 +12,7 @@ namespace MexicanFood.Core.DomainService
 
         T CreateEntity(T entity);
 
-        T UpdateEntity(int id, T entity);
+        T UpdateEntity(T entity);
 
         T DeleteEntity(int id);
     }
