@@ -8,6 +8,14 @@ namespace MexicanFood.Infrastructure.Data.Repositories
     {
         public MexicanFoodContext(DbContextOptions<MexicanFoodContext> opt) : base(opt) { }
 
+        protected override void OnModelCreating(ModelBuilder modelBuilder)
+        {
+            //modelBuilder.Entity<Order>()
+            //    .HasOne(o => o.CustomerName)
+            //    .WithMany(m => m.)
+            //    .OnDelete(DeleteBehavior.SetNull);
+        }
+
         public DbSet<User> Users { get; set; }
         public DbSet<Meal> Meals { get; set; }
         public DbSet<Order> Orders { get; set; }
