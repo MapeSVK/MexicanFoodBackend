@@ -28,14 +28,14 @@ namespace MexicanFood.Infrastructure.Data.Repositories
 
         public Order CreateEntity(Order order)
         {
-            _ctx.Add(order);
+            _ctx.Attach(order).State = EntityState.Added;
             _ctx.SaveChanges();
             return order;
         }
 
         public Order UpdateEntity(Order order)
         {
-            _ctx.Update(order);
+            _ctx.Attach(order).State = EntityState.Modified;
             _ctx.SaveChanges();
             return order;
         }

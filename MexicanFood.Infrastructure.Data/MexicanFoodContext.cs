@@ -10,10 +10,16 @@ namespace MexicanFood.Infrastructure.Data.Repositories
 
         protected override void OnModelCreating(ModelBuilder modelBuilder)
         {
-            //modelBuilder.Entity<Order>()
-            //    .HasOne(o => o.CustomerName)
-            //    .WithMany(m => m.)
-            //    .OnDelete(DeleteBehavior.SetNull);
+            modelBuilder.Entity<OrderLine>()
+                .HasOne(ol => ol.Order)
+                .WithMany(o => o.OrderLines);
+
+            modelBuilder.Entity<OrderLine>()
+                .HasOne(ol => ol.Meal)
+                .WithMany(m => m.OrderLines);
+
+            modelBuilder.Entity<OrderLine>()
+                .HasKey(ol => new { ol.OrderId, ol.MealId });
         }
 
         public DbSet<User> Users { get; set; }

@@ -27,7 +27,7 @@ namespace MexicanFood.Infrastructure.Data.Repositories
 
         public Meal CreateEntity(Meal meal)
         {
-            _ctx.Add(meal);
+            _ctx.Attach(meal).State = EntityState.Added;
             _ctx.SaveChanges();
             return meal;
         }
