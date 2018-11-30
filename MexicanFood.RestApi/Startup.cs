@@ -22,20 +22,36 @@ namespace MexicanFood.RestApi
 {
 	public class Startup
 	{
-		public Startup(IConfiguration configuration)
+		public Startup(IConfiguration configuration, IHostingEnvironment env)
 		{
 			Configuration = configuration;
+			Environment = env;
 		}
 
 		public IConfiguration Configuration { get; }
+		public IHostingEnvironment Environment { get; }
 
 		// This method gets called by the runtime. Use this method to add services to the container.
 		public void ConfigureServices(IServiceCollection services)
 		{
-            services.AddCors();
-
-            services.AddDbContext<MexicanFoodContext>(opt => opt.UseSqlite("Data Source=mexicanFood.db"));
-            services.AddDbContext<MexicanFoodContext>(opt => opt.UseSqlServer(Configuration.GetConnectionString("defaultConnection")));
+			services.AddCors(options =>
+			{
+				options.AddPolicy("AllowSpecificOrigin",
+					builder => builder
+						.AllowAnyOrigin().AllowAnyHeader().AllowAnyMethod()
+				);
+			});
+			
+			if (Environment.IsDevelopment())
+			{
+				services.AddDbContext<MexicanFoodContext>(
+					opt => opt.UseSqlite("Data Source=mexicanFood.db"));
+			}
+			else
+			{
+				services.AddDbContext<MexicanFoodContext>(opt =>
+					opt.UseSqlServer(Configuration.GetConnectionString("defaultConnection")));
+			}
 
             services.AddScoped<IRepository<Meal>, MealRepository>();
 			services.AddScoped<IMealService, MealService>();
@@ -61,16 +77,18 @@ namespace MexicanFood.RestApi
 			}
 			else
 			{
-				//app.UseHsts();
+				
                 using (var scope = app.ApplicationServices.CreateScope())
                 {
                     var ctx = scope.ServiceProvider.GetService<MexicanFoodContext>();
                     ctx.Database.EnsureCreated();
                 }
-            }
 
-            app.UseCors(builder => builder.AllowAnyOrigin().AllowAnyMethod().AllowAnyHeader());
-            //app.UseHttpsRedirection();
+				app.UseHsts();
+			}
+
+            app.UseHttpsRedirection();
+			app.UseCors("AllowSpecificOrigin");
             app.UseMvc();
 		}
 	}
