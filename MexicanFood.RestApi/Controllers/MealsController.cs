@@ -3,6 +3,8 @@ using System.Collections.Generic;
 using MexicanFood.Core.ApplicationService;
 using MexicanFood.Entities;
 using Microsoft.AspNetCore.Mvc;
+using Microsoft.AspNetCore.Server.Kestrel.Core.Internal.Http;
+using Microsoft.VisualStudio.Web.CodeGeneration.Contracts.Messaging;
 
 namespace MexicanFood.RestApi.Controllers
 {
@@ -17,7 +19,7 @@ namespace MexicanFood.RestApi.Controllers
             _mealService = mealService;
         }
         
-        // GET api/values
+        // GET api/meals
         [HttpGet]
         public ActionResult<List<Meal>> Get()
         {
@@ -32,7 +34,7 @@ namespace MexicanFood.RestApi.Controllers
 
         }
 
-        // GET api/values/5
+        // GET api/meals/5
         [HttpGet("{id}")]
         public ActionResult<Meal> Get(int id)
         {
@@ -42,7 +44,7 @@ namespace MexicanFood.RestApi.Controllers
             return Ok(_mealService.MealFoundById(id));
         }
 
-        // POST api/values
+        // POST api/meals
         [HttpPost]
         public ActionResult<Meal> Post([FromBody] Meal meal)
         {
@@ -56,7 +58,7 @@ namespace MexicanFood.RestApi.Controllers
             }
         }
 
-        // PUT api/values/5
+        // PUT api/meals/5
         [HttpPut("{id}")]
         public ActionResult<Meal> Put(int id, [FromBody] Meal meal)
         {
@@ -66,14 +68,15 @@ namespace MexicanFood.RestApi.Controllers
             return Ok(_mealService.UpdateMeal(id, meal));
         }
 
-        // DELETE api/values/5
+        // DELETE api/meals/5
         [HttpDelete("{id}")]
         public ActionResult<Meal> Delete(int id)
         {
             var mDelete = _mealService.MealFoundById(id);
             _mealService.DeleteMeal(mDelete.Id);
+            
+            return Ok(mDelete);
 
-            return Ok("Meal with id: " + id + " was deleted");
         }
     }
 }

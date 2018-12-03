@@ -6,9 +6,15 @@ namespace MexicanFood.Infrastructure.Data.Repositories
 {
 	public class UserRepository : IRepository<User>
 	{
+		readonly MexicanFoodContext _ctx;
+		public UserRepository(MexicanFoodContext ctx)
+		{
+			_ctx = ctx;
+		}
+		
 		public IEnumerable<User> ReadAllEntities()
 		{
-			throw new System.NotImplementedException();
+			return _ctx.Users;
 		}
 
 		public User EntityFoundById(int id)

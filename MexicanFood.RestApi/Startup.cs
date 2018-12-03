@@ -7,6 +7,8 @@ using MexicanFood.Core.ApplicationService.Implementation;
 using MexicanFood.Core.DomainService;
 using MexicanFood.Entities;
 using MexicanFood.Infrastructure.Data.Repositories;
+using MexicanFood.Infrastructure.Data.Repositories.Helpers;
+using Microsoft.AspNetCore.Authentication.JwtBearer;
 using Microsoft.AspNetCore.Builder;
 using Microsoft.AspNetCore.Hosting;
 using Microsoft.AspNetCore.HttpsPolicy;
@@ -16,6 +18,7 @@ using Microsoft.Extensions.Configuration;
 using Microsoft.Extensions.DependencyInjection;
 using Microsoft.Extensions.Logging;
 using Microsoft.Extensions.Options;
+using Microsoft.IdentityModel.Tokens;
 using Newtonsoft.Json;
 
 namespace MexicanFood.RestApi
@@ -34,6 +37,25 @@ namespace MexicanFood.RestApi
 		// This method gets called by the runtime. Use this method to add services to the container.
 		public void ConfigureServices(IServiceCollection services)
 		{
+			Byte[] secretBytes = new byte[40];
+			Random rand = new Random();
+			rand.NextBytes(secretBytes);
+			
+			services.AddAuthentication(JwtBearerDefaults.AuthenticationScheme).AddJwtBearer(options =>
+			{
+				options.TokenValidationParameters = new TokenValidationParameters
+				{
+					ValidateAudience = false,
+					//ValidAudience = "TodoApiClient",
+					ValidateIssuer = false,
+					//ValidIssuer = "TodoApi",
+					ValidateIssuerSigningKey = true,
+					IssuerSigningKey = new SymmetricSecurityKey(secretBytes),
+					ValidateLifetime = true, //validate the expiration and not before values in the token
+					ClockSkew = TimeSpan.FromMinutes(5) //5 minute tolerance for the expiration date
+				};
+			});
+			
 			services.AddCors(options =>
 			{
 				options.AddPolicy("AllowSpecificOrigin",
@@ -55,6 +77,7 @@ namespace MexicanFood.RestApi
 
             services.AddScoped<IRepository<Meal>, MealRepository>();
 			services.AddScoped<IMealService, MealService>();
+			services.AddSingleton<IAuthenticationHelper>(new AuthenticationHelper(secretBytes));
 			
 			services.AddMvc().AddJsonOptions(options => {
 				options.SerializerSettings.ReferenceLoopHandling = ReferenceLoopHandling.Ignore;
@@ -89,6 +112,7 @@ namespace MexicanFood.RestApi
 
             app.UseHttpsRedirection();
 			app.UseCors("AllowSpecificOrigin");
+			app.UseAuthentication();
             app.UseMvc();
 		}
 	}

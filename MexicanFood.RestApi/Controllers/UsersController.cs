@@ -10,33 +10,33 @@ namespace MexicanFood.RestApi.Controllers
 	[ApiController]
 	public class UsersController : ControllerBase
 	{
-		// GET api/values
+		// GET api/user    
 		[HttpGet]
 		public ActionResult<IEnumerable<string>> Get()
 		{
 			return new string[] {"value1", "value2"};
 		}
 
-		// GET api/values/5
+		// GET api/user/5
 		[HttpGet("{id}")]
 		public ActionResult<string> Get(int id)
 		{
 			return "value";
 		}
 
-		// POST api/values
+		// POST api/user
 		[HttpPost]
 		public void Post([FromBody] string value)
 		{
 		}
 
-		// PUT api/values/5
+		// PUT api/user/5
 		[HttpPut("{id}")]
 		public void Put(int id, [FromBody] string value)
 		{
 		}
 
-		// DELETE api/values/5
+		// DELETE api/user/5
 		[HttpDelete("{id}")]
 		public void Delete(int id)
 		{

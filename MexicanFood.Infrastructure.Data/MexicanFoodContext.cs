@@ -16,7 +16,7 @@ namespace MexicanFood.Infrastructure.Data.Repositories
 
             modelBuilder.Entity<OrderLine>()
                 .HasOne(ol => ol.Meal)
-                .WithMany(m => m.OrderLines);
+                .WithMany(m => m.OrderLines).OnDelete(DeleteBehavior.SetNull);
 
             modelBuilder.Entity<OrderLine>()
                 .HasKey(ol => new { ol.OrderId, ol.MealId });

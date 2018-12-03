@@ -42,9 +42,11 @@ namespace MexicanFood.Infrastructure.Data.Repositories
 
         public Meal DeleteEntity(int id)
         {
-            var removed = _ctx.Remove(new Meal {Id = id}).Entity;
+             //_ctx.Remove(new Meal {Id = id});
+            var mealDelete = EntityFoundById(id);
+            _ctx.Remove(mealDelete);
             _ctx.SaveChanges();
-            return removed;
+            return mealDelete;
         }
     }
 }
