@@ -1,3 +1,4 @@
+using System.Collections.Generic;
 using System.Linq;
 using MexicanFood.Core.ApplicationService;
 using MexicanFood.Core.DomainService;
@@ -8,13 +9,14 @@ using Microsoft.AspNetCore.Mvc;
 
 namespace MexicanFood.RestApi.Controllers
 {
-    [Route("/token")]
-    public class TokenController: ControllerBase
+    [Route("api/[controller]")]
+    [ApiController]
+    public class TokensController: ControllerBase
     {
         private IUserService _userService;
         private IAuthenticationHelper _authenticationHelper;
 
-        public TokenController(IUserService userService, IAuthenticationHelper authService)
+        public TokensController(IUserService userService, IAuthenticationHelper authService)
         {
             _userService = userService;
             _authenticationHelper = authService;

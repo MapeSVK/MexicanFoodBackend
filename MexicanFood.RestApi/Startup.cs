@@ -76,7 +76,10 @@ namespace MexicanFood.RestApi
 			}
 
             services.AddScoped<IRepository<Meal>, MealRepository>();
+			services.AddScoped<IRepository<User>, UserRepository>();
 			services.AddScoped<IMealService, MealService>();
+			services.AddScoped<IUserService, UserService>();
+			services.AddTransient<IDBInitializer, DBInitializer>();
 			services.AddSingleton<IAuthenticationHelper>(new AuthenticationHelper(secretBytes));
 			
 			services.AddMvc().AddJsonOptions(options => {
@@ -93,9 +96,11 @@ namespace MexicanFood.RestApi
 			{
 				app.UseDeveloperExceptionPage();
 				using (var scope = app.ApplicationServices.CreateScope())
-				{
-					var ctx = scope.ServiceProvider.GetService<MexicanFoodContext>();
-					DBInitializer.SeedDb(ctx);
+				{	
+					var services = scope.ServiceProvider;
+					var ctx = services.GetService<MexicanFoodContext>();
+					var dbInitializer = services.GetService<IDBInitializer>();
+					dbInitializer.SeedDb(ctx);
 				}
 			}
 			else
