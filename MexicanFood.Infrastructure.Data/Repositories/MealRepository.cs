@@ -3,6 +3,7 @@ using MexicanFood.Entities;
 using System.Collections.Generic;
 using System.Linq;
 using Microsoft.EntityFrameworkCore;
+using MexicanFood.Core.Entities;
 
 namespace MexicanFood.Infrastructure.Data.Repositories
 {
@@ -15,14 +16,17 @@ namespace MexicanFood.Infrastructure.Data.Repositories
             _ctx = ctx;
         }
 
-        public IEnumerable<Meal> ReadAllEntities()
+        public IEnumerable<Meal> ReadAll()
         {
             return _ctx.Meals;
         }
 
-        public Meal EntityFoundById(int id)
+        public Meal ReadById(int id)
         {
-            return _ctx.Meals.FirstOrDefault(meal => meal.Id == id);
+            return _ctx.Meals
+                .Include(m => m.OrderLines)
+                .ThenInclude(ol => ol.Order)
+                .FirstOrDefault(m => m.Id == id);
         }
 
         public Meal CreateEntity(Meal meal)
@@ -34,19 +38,38 @@ namespace MexicanFood.Infrastructure.Data.Repositories
 
         public Meal UpdateEntity(Meal mealUpdate)
         {
+            var newOrderLines = new List<OrderLine>();
+
+            if (mealUpdate.OrderLines != null)
+            { //Ask Lars, is this a hack or ok.
+                //Clone orderlines to new location in memory, so they are not overridden on Attach
+                newOrderLines = new List<OrderLine>(mealUpdate.OrderLines);     
+            }
+
+            //Attach product so basic properties are updated
             _ctx.Attach(mealUpdate).State = EntityState.Modified;
-            //_ctx.Entry(mealUpdate).Reference(o => o.Order).IsModified = true;
+
+            //Remove all orderlines with updated order information
+            _ctx.OrderLines.RemoveRange(
+                _ctx.OrderLines.Where(ol => ol.MealId == mealUpdate.Id)
+            );
+
+            //Add all orderlines with updated order information
+            foreach (var ol in newOrderLines)
+            {
+                _ctx.Entry(ol).State = EntityState.Added;
+            }
+
             _ctx.SaveChanges();
+
             return mealUpdate;
         }
 
         public Meal DeleteEntity(int id)
-        {
-             //_ctx.Remove(new Meal {Id = id});
-            var mealDelete = EntityFoundById(id);
-            _ctx.Remove(mealDelete);
+        {  
+            var remove = _ctx.Remove(new Meal { Id = id }).Entity;
             _ctx.SaveChanges();
-            return mealDelete;
+            return remove;
         }
     }
 }

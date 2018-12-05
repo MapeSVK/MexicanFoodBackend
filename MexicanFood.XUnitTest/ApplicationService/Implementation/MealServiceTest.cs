@@ -18,7 +18,7 @@ namespace MexicanFood.XUnitTest
         {
             var mealRepository = new Mock<IRepository<Meal>>();
             
-            mealRepository.Setup(m => m.EntityFoundById(It.IsAny<int>())).Returns(new Meal() { Id = 1 });
+            mealRepository.Setup(m => m.ReadById(It.IsAny<int>())).Returns(new Meal() { Id = 1 });
 
             IMealService service = new MealService(mealRepository.Object);
 
@@ -41,7 +41,7 @@ namespace MexicanFood.XUnitTest
         {
             var mealRepository = new Mock<IRepository<Meal>>();
             
-            mealRepository.Setup(m => m.EntityFoundById(It.IsAny<int>())).Returns(new Meal() { Id = 1 });
+            mealRepository.Setup(m => m.ReadById(It.IsAny<int>())).Returns(new Meal() { Id = 1 });
 
             IMealService service = new MealService(mealRepository.Object);
 
@@ -64,7 +64,7 @@ namespace MexicanFood.XUnitTest
         {
             var mealRepository = new Mock<IRepository<Meal>>();
             
-            mealRepository.Setup(m => m.EntityFoundById(It.IsAny<int>())).Returns(new Meal() { Id = 1 });
+            mealRepository.Setup(m => m.ReadById(It.IsAny<int>())).Returns(new Meal() { Id = 1 });
 
             IMealService service = new MealService(mealRepository.Object);
 
@@ -87,7 +87,7 @@ namespace MexicanFood.XUnitTest
         {
             var mealRepository = new Mock<IRepository<Meal>>();
             
-            mealRepository.Setup(m => m.EntityFoundById(It.IsAny<int>())).Returns(new Meal() { Id = 1 });
+            mealRepository.Setup(m => m.ReadById(It.IsAny<int>())).Returns(new Meal() { Id = 1 });
 
             IMealService service = new MealService(mealRepository.Object);
 
@@ -110,7 +110,7 @@ namespace MexicanFood.XUnitTest
         {
             var mealRepository = new Mock<IRepository<Meal>>();
 
-            mealRepository.Setup(m => m.EntityFoundById(It.IsAny<int>())).Returns(new Meal() { Id = 1 });
+            mealRepository.Setup(m => m.ReadById(It.IsAny<int>())).Returns(new Meal() { Id = 1 });
 
             IMealService service = new MealService(mealRepository.Object);
 
@@ -133,7 +133,7 @@ namespace MexicanFood.XUnitTest
         {
             var mealRepository = new Mock<IRepository<Meal>>();
 
-            mealRepository.Setup(m => m.EntityFoundById(It.IsAny<int>())).Returns(new Meal() { Id = 1 });
+            mealRepository.Setup(m => m.ReadById(It.IsAny<int>())).Returns(new Meal() { Id = 1 });
 
             IMealService service = new MealService(mealRepository.Object);
 
@@ -156,13 +156,13 @@ namespace MexicanFood.XUnitTest
         {
             var mealRepository = new Mock<IRepository<Meal>>();
             
-            mealRepository.Setup(m => m.ReadAllEntities()).Returns(new List<Meal>());
+            mealRepository.Setup(m => m.ReadAll()).Returns(new List<Meal>());
 
             IMealService service = new MealService(mealRepository.Object);
            
             service.GetMeals();
 
-            mealRepository.Verify(m => m.ReadAllEntities(), Times.Once);
+            mealRepository.Verify(m => m.ReadAll(), Times.Once);
         }
 
         [Fact]
@@ -170,13 +170,13 @@ namespace MexicanFood.XUnitTest
         {
             var mealRepository = new Mock<IRepository<Meal>>();
             
-            mealRepository.Setup(m => m.EntityFoundById(1));
+            mealRepository.Setup(m => m.ReadById(1));
 
             IMealService service = new MealService(mealRepository.Object);
 
             service.MealFoundById(1);
 
-            mealRepository.Verify(m => m.EntityFoundById(1), Times.Once);
+            mealRepository.Verify(m => m.ReadById(1), Times.Once);
         }
 
         [Fact]
@@ -184,7 +184,7 @@ namespace MexicanFood.XUnitTest
         {
             var mealRepository = new Mock<IRepository<Meal>>();
             
-            mealRepository.Setup(m => m.EntityFoundById(It.IsAny<int>())).Returns(new Meal() { Id = 1 });
+            mealRepository.Setup(m => m.ReadById(It.IsAny<int>())).Returns(new Meal() { Id = 1 });
 
             IMealService service = new MealService(mealRepository.Object);
 
@@ -207,7 +207,7 @@ namespace MexicanFood.XUnitTest
         {
             var mealRepository = new Mock<IRepository<Meal>>();
             
-            mealRepository.Setup(m => m.EntityFoundById(It.IsAny<int>())).Returns(new Meal() { Id = 1 });
+            mealRepository.Setup(m => m.ReadById(It.IsAny<int>())).Returns(new Meal() { Id = 1 });
 
             IMealService service = new MealService(mealRepository.Object);
 

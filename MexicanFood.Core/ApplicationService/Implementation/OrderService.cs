@@ -33,12 +33,12 @@ namespace MexicanFood.Core.ApplicationService.Implementation
 
         public Order FindOrderById(int id)
         {
-            return _orderRepository.EntityFoundById(id);
+            return _orderRepository.ReadById(id);
         }
 
         public List<Order> GetOrders()
         {
-            return _orderRepository.ReadAllEntities().ToList();
+            return _orderRepository.ReadAll().ToList();
         }
 
         public Order UpdateOrder(int id, Order updateOrder)

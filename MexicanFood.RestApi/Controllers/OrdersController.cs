@@ -40,6 +40,7 @@ namespace MexicanFood.RestApi.Controllers
         {
             if (id < 1)
                 return BadRequest("Id cannot be less than 1");
+
             return Ok(_orderService.FindOrderById(id));
         }
 
@@ -62,7 +63,7 @@ namespace MexicanFood.RestApi.Controllers
         public ActionResult<Order> Put(int id, [FromBody] Order order)
         {
             if (id < 1 || id != order.Id)
-                return BadRequest("Failed to match Id of entity to change to entity Id");
+                return BadRequest("Parameter id and order Id must be the same");
 
             return Ok(_orderService.UpdateOrder(id, order));    
         }
@@ -70,11 +71,10 @@ namespace MexicanFood.RestApi.Controllers
         // DELETE: api/ApiWithActions/5
         [HttpDelete("{id}")]
         public ActionResult<Order> Delete(int id)
-        {
-            var oDelete = _orderService.FindOrderById(id);
-            _orderService.DeleteOrder(oDelete.Id);
-            return Ok($"Order with id {id} was deleted");
-            
+        { 
+            var oDelete = _orderService.DeleteOrder(id);
+
+            return Ok($"Order with id {id} was deleted");   
         }
     }
 }

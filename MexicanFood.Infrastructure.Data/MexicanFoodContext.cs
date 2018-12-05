@@ -11,19 +11,22 @@ namespace MexicanFood.Infrastructure.Data.Repositories
         protected override void OnModelCreating(ModelBuilder modelBuilder)
         {
             modelBuilder.Entity<OrderLine>()
+                .HasKey(ol => new { ol.OrderId, ol.MealId });
+
+            modelBuilder.Entity<OrderLine>()
                 .HasOne(ol => ol.Order)
-                .WithMany(o => o.OrderLines);
+                .WithMany(o => o.OrderLines)
+                .HasForeignKey(ol => ol.OrderId);
 
             modelBuilder.Entity<OrderLine>()
                 .HasOne(ol => ol.Meal)
-                .WithMany(m => m.OrderLines);
-
-            modelBuilder.Entity<OrderLine>()
-                .HasKey(ol => new { ol.OrderId, ol.MealId });
+                .WithMany(m => m.OrderLines)
+                .HasForeignKey(ol => ol.MealId);
         }
 
         public DbSet<User> Users { get; set; }
         public DbSet<Meal> Meals { get; set; }
 		public DbSet<Order> Orders { get; set; }
+        public DbSet<OrderLine>  OrderLines { get; set; }
     }
 }

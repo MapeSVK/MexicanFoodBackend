@@ -16,7 +16,7 @@ namespace MexicanFood.Core.ApplicationService.Implementation
 		
 		public List<User> GetUsers()
 		{
-			return _userRepository.ReadAllEntities().ToList();
+			return _userRepository.ReadAll().ToList();
 		}
 	}
 }

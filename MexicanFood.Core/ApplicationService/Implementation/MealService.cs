@@ -18,12 +18,12 @@ namespace MexicanFood.Core.ApplicationService.Implementation
         
         public List<Meal> GetMeals()
         {
-            return _mealRepository.ReadAllEntities().ToList();
+            return _mealRepository.ReadAll().ToList();
         }
 
         public Meal MealFoundById(int id)
         {
-            return _mealRepository.EntityFoundById(id);
+            return _mealRepository.ReadById(id);
         }
 
         public Meal CreateMeal(Meal meal)

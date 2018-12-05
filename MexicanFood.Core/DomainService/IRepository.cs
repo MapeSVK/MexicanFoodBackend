@@ -6,9 +6,9 @@ namespace MexicanFood.Core.DomainService
 {
     public interface IRepository<T>
     {
-        IEnumerable<T> ReadAllEntities();
+        IEnumerable<T> ReadAll();
 
-        T EntityFoundById(int id);
+        T ReadById(int id);
 
         T CreateEntity(T entity);
 

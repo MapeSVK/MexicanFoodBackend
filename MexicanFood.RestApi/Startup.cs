@@ -5,6 +5,7 @@ using System.Threading.Tasks;
 using MexicanFood.Core.ApplicationService;
 using MexicanFood.Core.ApplicationService.Implementation;
 using MexicanFood.Core.DomainService;
+using MexicanFood.Core.Entities;
 using MexicanFood.Entities;
 using MexicanFood.Infrastructure.Data.Repositories;
 using MexicanFood.Infrastructure.Data.Repositories.Helpers;
@@ -25,14 +26,15 @@ namespace MexicanFood.RestApi
 {
 	public class Startup
 	{
-		public Startup(IConfiguration configuration, IHostingEnvironment env)
+        public IConfiguration Configuration { get; }
+        public IHostingEnvironment Environment { get; }
+
+        public Startup(IConfiguration configuration, IHostingEnvironment env)
 		{
+            //Do we need a builder?
 			Configuration = configuration;
 			Environment = env;
 		}
-
-		public IConfiguration Configuration { get; }
-		public IHostingEnvironment Environment { get; }
 
 		// This method gets called by the runtime. Use this method to add services to the container.
 		public void ConfigureServices(IServiceCollection services)
@@ -76,10 +78,15 @@ namespace MexicanFood.RestApi
 			}
 
             services.AddScoped<IRepository<Meal>, MealRepository>();
-			services.AddScoped<IRepository<User>, UserRepository>();
-			services.AddScoped<IMealService, MealService>();
+            services.AddScoped<IMealService, MealService>();
+
+            services.AddScoped<IRepository<User>, UserRepository>();
 			services.AddScoped<IUserService, UserService>();
-			services.AddTransient<IDBInitializer, DBInitializer>();
+
+            services.AddScoped<IRepository<Order>, OrderRepository>();
+            services.AddScoped<IOrderService, OrderService>();
+
+            services.AddTransient<IDBInitializer, DBInitializer>();
 			services.AddSingleton<IAuthenticationHelper>(new AuthenticationHelper(secretBytes));
 			
 			services.AddMvc().AddJsonOptions(options => {

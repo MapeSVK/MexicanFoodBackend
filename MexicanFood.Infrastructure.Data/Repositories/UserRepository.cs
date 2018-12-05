@@ -12,12 +12,12 @@ namespace MexicanFood.Infrastructure.Data.Repositories
 			_ctx = ctx;
 		}
 		
-		public IEnumerable<User> ReadAllEntities()
+		public IEnumerable<User> ReadAll()
 		{
 			return _ctx.Users;
 		}
 
-		public User EntityFoundById(int id)
+		public User ReadById(int id)
 		{
 			throw new System.NotImplementedException();
 		}

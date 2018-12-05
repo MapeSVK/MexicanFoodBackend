@@ -31,7 +31,6 @@ namespace MexicanFood.RestApi.Controllers
             {
                 return BadRequest(e.Message);
             }
-
         }
 
         // GET api/meals/5
@@ -63,7 +62,7 @@ namespace MexicanFood.RestApi.Controllers
         public ActionResult<Meal> Put(int id, [FromBody] Meal meal)
         {
             if (id < 1 || id != meal.Id)
-                return BadRequest("Parameter Id and order ID must be the same");
+                return BadRequest("Parameter id and meal Id must be the same");
 
             return Ok(_mealService.UpdateMeal(id, meal));
         }
@@ -71,12 +70,10 @@ namespace MexicanFood.RestApi.Controllers
         // DELETE api/meals/5
         [HttpDelete("{id}")]
         public ActionResult<Meal> Delete(int id)
-        {
-            var mDelete = _mealService.MealFoundById(id);
-            _mealService.DeleteMeal(mDelete.Id);
+        { 
+            var mDelete = _mealService.DeleteMeal(id);
             
             return Ok(mDelete);
-
         }
     }
 }

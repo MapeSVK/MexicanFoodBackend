@@ -30,7 +30,7 @@ namespace XUnitTestProject1
         {
             var orderRepository = new Mock<IRepository<Order>>();
 
-            orderRepository.Setup(m => m.EntityFoundById(It.IsAny<int>())).Returns(new Order() { Id = 1 });
+            orderRepository.Setup(m => m.ReadById(It.IsAny<int>())).Returns(new Order() { Id = 1 });
 
             IOrderService service = new OrderService(orderRepository.Object);
 
@@ -49,7 +49,7 @@ namespace XUnitTestProject1
         {
             var orderRepository = new Mock<IRepository<Order>>();
 
-            orderRepository.Setup(m => m.EntityFoundById(It.IsAny<int>())).Returns(new Order() { Id = 1 });
+            orderRepository.Setup(m => m.ReadById(It.IsAny<int>())).Returns(new Order() { Id = 1 });
 
             IOrderService service = new OrderService(orderRepository.Object);
 
@@ -73,13 +73,13 @@ namespace XUnitTestProject1
         {
             var orderRepository = new Mock<IRepository<Order>>();
 
-            orderRepository.Setup(m => m.ReadAllEntities()).Returns(new List<Order>());
+            orderRepository.Setup(m => m.ReadAll()).Returns(new List<Order>());
 
             IOrderService service = new OrderService(orderRepository.Object);
 
             service.GetOrders();
 
-            orderRepository.Verify(m => m.ReadAllEntities(), Times.Once);
+            orderRepository.Verify(m => m.ReadAll(), Times.Once);
         }
 
         [Fact]
@@ -87,13 +87,13 @@ namespace XUnitTestProject1
         {
             var orderRepository = new Mock<IRepository<Order>>();
 
-            orderRepository.Setup(m => m.EntityFoundById(1));
+            orderRepository.Setup(m => m.ReadById(1));
 
             IOrderService service = new OrderService(orderRepository.Object);
 
             service.FindOrderById(1);
 
-            orderRepository.Verify(m => m.EntityFoundById(1), Times.Once);
+            orderRepository.Verify(m => m.ReadById(1), Times.Once);
         }
 
     }

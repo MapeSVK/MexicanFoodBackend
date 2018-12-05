@@ -2,6 +2,7 @@
 using System.Collections.Generic;
 using System.Linq;
 using System.Threading.Tasks;
+using MexicanFood.Core.ApplicationService;
 using Microsoft.AspNetCore.Mvc;
 
 namespace MexicanFood.RestApi.Controllers
@@ -10,18 +11,31 @@ namespace MexicanFood.RestApi.Controllers
 	[ApiController]
 	public class UsersController : ControllerBase
 	{
-		// GET api/user    
-		[HttpGet]
+        readonly IUserService _userService;
+        public UsersController(IUserService userService)
+        {
+            _userService = userService;
+        }
+
+        // GET api/user    
+        [HttpGet]
 		public ActionResult<IEnumerable<string>> Get()
 		{
-			return new string[] {"value1", "value2"};
-		}
+            try
+            {
+                return Ok(_userService.GetUsers());
+            }
+            catch (Exception e)
+            {
+                return BadRequest(e.Message);
+            }
+        }
 
 		// GET api/user/5
 		[HttpGet("{id}")]
 		public ActionResult<string> Get(int id)
 		{
-			return "value";
+			return "You cant get specific users";
 		}
 
 		// POST api/user
