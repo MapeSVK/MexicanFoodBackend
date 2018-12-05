@@ -1,7 +1,6 @@
 using System;
 using System.Collections.Generic;
 using System.IO;
-using System.Linq;
 using MexicanFood.Core.ApplicationService;
 using MexicanFood.Core.ApplicationService.Implementation;
 using MexicanFood.Core.DomainService;
@@ -174,7 +173,7 @@ namespace MexicanFood.XUnitTest
 
             IMealService service = new MealService(mealRepository.Object);
 
-            service.MealFoundById(1);
+            service.GetMealById(1);
 
             mealRepository.Verify(m => m.ReadById(1), Times.Once);
         }

@@ -1,10 +1,7 @@
 ﻿using System;
 using System.Collections.Generic;
-using System.Linq;
-using System.Threading.Tasks;
 using MexicanFood.Core.ApplicationService;
 using MexicanFood.Core.Entities;
-using Microsoft.AspNetCore.Http;
 using Microsoft.AspNetCore.Mvc;
 
 namespace MexicanFood.RestApi.Controllers
@@ -41,7 +38,7 @@ namespace MexicanFood.RestApi.Controllers
             if (id < 1)
                 return BadRequest("Id cannot be less than 1");
 
-            return Ok(_orderService.FindOrderById(id));
+            return Ok(_orderService.GetOrderById(id));
         }
 
         // POST: api/Orders

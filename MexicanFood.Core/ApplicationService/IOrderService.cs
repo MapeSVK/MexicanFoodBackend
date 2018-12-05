@@ -9,7 +9,7 @@ namespace MexicanFood.Core.ApplicationService
     {
         List<Order> GetOrders();
 
-        Order FindOrderById(int id);
+        Order GetOrderById(int id);
 
         Order CreateOrder(Order order);
 

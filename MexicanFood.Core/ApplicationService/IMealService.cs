@@ -7,7 +7,7 @@ namespace MexicanFood.Core.ApplicationService
     {
         List<Meal> GetMeals();
 
-        Meal MealFoundById(int id);
+        Meal GetMealById(int id);
 
         Meal CreateMeal(Meal meal);
 

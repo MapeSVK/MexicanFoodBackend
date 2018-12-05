@@ -3,8 +3,6 @@ using System.Collections.Generic;
 using MexicanFood.Core.ApplicationService;
 using MexicanFood.Entities;
 using Microsoft.AspNetCore.Mvc;
-using Microsoft.AspNetCore.Server.Kestrel.Core.Internal.Http;
-using Microsoft.VisualStudio.Web.CodeGeneration.Contracts.Messaging;
 
 namespace MexicanFood.RestApi.Controllers
 {
@@ -40,7 +38,7 @@ namespace MexicanFood.RestApi.Controllers
             if (id < 1)
                 return BadRequest("Id must be greater than 0");
 
-            return Ok(_mealService.MealFoundById(id));
+            return Ok(_mealService.GetMealById(id));
         }
 
         // POST api/meals

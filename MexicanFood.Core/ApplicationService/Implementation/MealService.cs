@@ -1,5 +1,4 @@
-﻿using System;
-using System.Collections.Generic;
+﻿using System.Collections.Generic;
 using System.IO;
 using System.Linq;
 using MexicanFood.Core.DomainService;
@@ -21,7 +20,7 @@ namespace MexicanFood.Core.ApplicationService.Implementation
             return _mealRepository.ReadAll().ToList();
         }
 
-        public Meal MealFoundById(int id)
+        public Meal GetMealById(int id)
         {
             return _mealRepository.ReadById(id);
         }

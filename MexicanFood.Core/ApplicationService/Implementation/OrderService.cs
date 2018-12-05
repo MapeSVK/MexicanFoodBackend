@@ -1,8 +1,6 @@
-﻿using System;
-using System.Collections.Generic;
+﻿using System.Collections.Generic;
 using System.IO;
 using System.Linq;
-using System.Text;
 using MexicanFood.Core.DomainService;
 using MexicanFood.Core.Entities;
 
@@ -31,7 +29,7 @@ namespace MexicanFood.Core.ApplicationService.Implementation
             return _orderRepository.DeleteEntity(id);
         }
 
-        public Order FindOrderById(int id)
+        public Order GetOrderById(int id)
         {
             return _orderRepository.ReadById(id);
         }

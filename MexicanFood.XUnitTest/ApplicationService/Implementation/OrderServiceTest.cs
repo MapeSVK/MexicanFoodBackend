@@ -58,7 +58,6 @@ namespace XUnitTestProject1
                 CustomerName = "Hala",
                 MobileNumber = "22",
                 Comment = "hi",
-                TotalPrice = 33,
                 OrderedDateAndTime = DateTime.Now,
                 PickUpDateAndTime = DateTime.Now
             };
@@ -91,7 +90,7 @@ namespace XUnitTestProject1
 
             IOrderService service = new OrderService(orderRepository.Object);
 
-            service.FindOrderById(1);
+            service.GetOrderById(1);
 
             orderRepository.Verify(m => m.ReadById(1), Times.Once);
         }

@@ -1,10 +1,8 @@
 ﻿using MexicanFood.Core.DomainService;
 using MexicanFood.Core.Entities;
 using Microsoft.EntityFrameworkCore;
-using System;
 using System.Collections.Generic;
 using System.Linq;
-using System.Text;
 
 namespace MexicanFood.Infrastructure.Data.Repositories
 {
