@@ -14,5 +14,6 @@ namespace MexicanFood.Core.Entities
         public Order Order { get; set; }
 
         public int Quantity { get; set; }
+        public double PriceWhenBought { get; set; }
     }
 }
