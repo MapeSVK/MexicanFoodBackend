@@ -17,7 +17,9 @@ namespace MexicanFood.Infrastructure.Data.Repositories
         public IEnumerable<Order> ReadAll()
         {
             //Might need refactoring if filter is added etc
-            return _ctx.Orders;
+            return _ctx.Orders
+                .Include(o => o.OrderLines)
+                .ThenInclude(ol => ol.Meal);
         }
 
         public Order ReadById(int id)
