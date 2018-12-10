@@ -17,9 +17,6 @@ namespace MexicanFood.Infrastructure.Data.Repositories
         {
             var mealRepository = new MealRepository(ctx);
 
-            ctx.Database.EnsureDeleted();
-            ctx.Database.EnsureCreated();
-
             var meal1 = ctx.Meals.Add(new Meal()
             {
                 Name = "meal1",

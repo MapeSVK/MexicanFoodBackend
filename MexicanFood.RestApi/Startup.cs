@@ -108,6 +108,8 @@ namespace MexicanFood.RestApi
 					var services = scope.ServiceProvider;
 					var ctx = services.GetService<MexicanFoodContext>();
 					var dbInitializer = services.GetService<IDBInitializer>();
+					ctx.Database.EnsureDeleted();
+					ctx.Database.EnsureCreated();
 					dbInitializer.SeedDb(ctx);
 				}
 			}
