@@ -121,7 +121,7 @@ namespace MexicanFood.RestApi
                     var ctx = scope.ServiceProvider.GetService<MexicanFoodContext>();
                     ctx.Database.EnsureCreated();
 	                var dbInitializer = ctx.GetService<IDBInitializer>();
-	                dbInitializer.SeedDb(ctx);
+	                //dbInitializer.SeedDb(ctx);
 	                
                 }
 
