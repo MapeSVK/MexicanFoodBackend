@@ -1,42 +1,54 @@
 ﻿using System;
 using System.Collections.Generic;
-using System.Linq;
-using System.Threading.Tasks;
+using MexicanFood.Core.ApplicationService;
 using Microsoft.AspNetCore.Mvc;
 
 namespace MexicanFood.RestApi.Controllers
 {
-	[Route("api/[controller]")]
+    [Route("api/[controller]")]
 	[ApiController]
 	public class UsersController : ControllerBase
 	{
-		// GET api/values
-		[HttpGet]
+        readonly IUserService _userService;
+        public UsersController(IUserService userService)
+        {
+            _userService = userService;
+        }
+
+        // GET api/user    
+        [HttpGet]
 		public ActionResult<IEnumerable<string>> Get()
 		{
-			return new string[] {"value1", "value2"};
-		}
+            try
+            {
+                return Ok(_userService.GetUsers());
+            }
+            catch (Exception e)
+            {
+                return BadRequest(e.Message);
+            }
+        }
 
-		// GET api/values/5
+		// GET api/user/5
 		[HttpGet("{id}")]
 		public ActionResult<string> Get(int id)
 		{
-			return "value";
+			return "You cant get specific users";
 		}
 
-		// POST api/values
+		// POST api/user
 		[HttpPost]
 		public void Post([FromBody] string value)
 		{
 		}
 
-		// PUT api/values/5
+		// PUT api/user/5
 		[HttpPut("{id}")]
 		public void Put(int id, [FromBody] string value)
 		{
 		}
 
-		// DELETE api/values/5
+		// DELETE api/user/5
 		[HttpDelete("{id}")]
 		public void Delete(int id)
 		{

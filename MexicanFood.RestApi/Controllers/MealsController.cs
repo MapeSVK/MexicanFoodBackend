@@ -17,7 +17,7 @@ namespace MexicanFood.RestApi.Controllers
             _mealService = mealService;
         }
         
-        // GET api/values
+        // GET api/meals
         [HttpGet]
         public ActionResult<List<Meal>> Get()
         {
@@ -29,20 +29,19 @@ namespace MexicanFood.RestApi.Controllers
             {
                 return BadRequest(e.Message);
             }
-
         }
 
-        // GET api/values/5
+        // GET api/meals/5
         [HttpGet("{id}")]
         public ActionResult<Meal> Get(int id)
         {
             if (id < 1)
-                return BadRequest("Id must be greater then 0");
+                return BadRequest("Id must be greater than 0");
 
-            return Ok(_mealService.MealFoundById(id));
+            return Ok(_mealService.GetMealById(id));
         }
 
-        // POST api/values
+        // POST api/meals
         [HttpPost]
         public ActionResult<Meal> Post([FromBody] Meal meal)
         {
@@ -56,21 +55,23 @@ namespace MexicanFood.RestApi.Controllers
             }
         }
 
-        // PUT api/values/5
+        // PUT api/meals/5
         [HttpPut("{id}")]
         public ActionResult<Meal> Put(int id, [FromBody] Meal meal)
         {
             if (id < 1 || id != meal.Id)
-                return BadRequest("Parameter Id and order ID must be the same");
+                return BadRequest("Parameter id and meal Id must be the same");
 
             return Ok(_mealService.UpdateMeal(id, meal));
         }
 
-        // DELETE api/values/5
+        // DELETE api/meals/5
         [HttpDelete("{id}")]
         public ActionResult<Meal> Delete(int id)
-        {
-            return Ok("Meal with id: " + id);
+        { 
+            var mDelete = _mealService.DeleteMeal(id);
+            
+            return Ok(mDelete);
         }
     }
 }

@@ -13,5 +13,6 @@ namespace MexicanFood.Entities
         public string Description { get; set; }
         public string Picture { get; set; }
         public double Price { get; set; }
+        public List<OrderLine> OrderLines { get; set; }
     }
 }

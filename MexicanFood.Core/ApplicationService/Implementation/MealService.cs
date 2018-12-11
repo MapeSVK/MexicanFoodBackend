@@ -1,5 +1,4 @@
-﻿using System;
-using System.Collections.Generic;
+﻿using System.Collections.Generic;
 using System.IO;
 using System.Linq;
 using MexicanFood.Core.DomainService;
@@ -18,12 +17,12 @@ namespace MexicanFood.Core.ApplicationService.Implementation
         
         public List<Meal> GetMeals()
         {
-            return _mealRepository.ReadAllEntities().ToList();
+            return _mealRepository.ReadAll().ToList();
         }
 
-        public Meal MealFoundById(int id)
+        public Meal GetMealById(int id)
         {
-            return _mealRepository.EntityFoundById(id);
+            return _mealRepository.ReadById(id);
         }
 
         public Meal CreateMeal(Meal meal)
@@ -53,7 +52,7 @@ namespace MexicanFood.Core.ApplicationService.Implementation
             if (mealUpdate.Price == 0)
                 throw new InvalidDataException("Meal needs a price");
             
-            return _mealRepository.UpdateEntity(id, mealUpdate);
+            return _mealRepository.UpdateEntity(mealUpdate);
         }
 
         public Meal DeleteMeal(int id)
