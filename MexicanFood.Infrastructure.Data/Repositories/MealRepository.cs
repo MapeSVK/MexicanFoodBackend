@@ -51,14 +51,9 @@ namespace MexicanFood.Infrastructure.Data.Repositories
         }
 
         /**
-         * Takes a Meal and checks if its OrderLine list is empty, if it is, it will
-         * update the local representation of the meal, the Meal passed represented,
-         * with the new data, then save the changes to the real database.
-         * If OrderLines is not null, the method makes a copy of the OrderLines,
-         * removes the OrderLines matching the Meals id, and adds the copied entries
-         * to the local representation, then saves changes to the actual database.
+         * Takes a meal and updates the local representation of that meal, then saves
+         * the changes to the actual database.
          * Returns the Meal passed.
-         * (The removal and adding is to avoid problems with the updated meals relations)
          */
         public Meal UpdateEntity(Meal mealUpdate)
         {

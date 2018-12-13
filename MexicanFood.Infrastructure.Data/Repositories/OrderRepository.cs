@@ -56,9 +56,8 @@ namespace MexicanFood.Infrastructure.Data.Repositories
          * update the local representation of the order, the Order passed represented,
          * with the new data, then save the changes to the real database.
          * If OrderLines is not null, the method makes a copy of the OrderLines,
-         * removes the OrderLines matching the Orders id, and adds the copied entries
-         * to the local representation, then saves changes to the actual database.
-         * Returns the Order passed.
+         * removes the OrderLines matching the Orders id, updates the order with the
+         * new information in the Order passed, then re-adds the OrderLines that were removed.
          * (The removal and adding is to avoid problems with the updated meals relations)
          */
         public Order UpdateEntity(Order orderUpdate)
