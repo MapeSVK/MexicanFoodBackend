@@ -57,7 +57,6 @@ namespace MexicanFood.RestApi
                 };
             });
 
-            //Adds access for all origins to access the backend
             services.AddCors(options =>
             {
                 options.AddPolicy("AllowSpecificOrigin",
@@ -66,13 +65,11 @@ namespace MexicanFood.RestApi
                 );
             });
 
-            //Localhost database using Sqlite
             if (Environment.IsDevelopment())
             {
                 services.AddDbContext<MexicanFoodContext>(
                     opt => opt.UseSqlite("Data Source=mexicanFood.db"));
             }
-            //For actual database
             else
             {
                 services.AddDbContext<MexicanFoodContext>(opt =>
