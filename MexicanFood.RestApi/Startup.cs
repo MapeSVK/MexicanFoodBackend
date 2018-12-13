@@ -32,7 +32,6 @@ namespace MexicanFood.RestApi
 
         public Startup(IConfiguration configuration, IHostingEnvironment env)
 		{
-            //Do we need a builder?
 			Configuration = configuration;
 			Environment = env;
 		}
@@ -59,6 +58,7 @@ namespace MexicanFood.RestApi
 				};
 			});
 			
+			//Adds access for any origin to access the backend.
 			services.AddCors(options =>
 			{
 				options.AddPolicy("AllowSpecificOrigin",

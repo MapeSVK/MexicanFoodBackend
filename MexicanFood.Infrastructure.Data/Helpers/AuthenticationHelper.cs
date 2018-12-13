@@ -7,7 +7,7 @@ using Microsoft.IdentityModel.Tokens;
 
 namespace MexicanFood.Infrastructure.Data.Repositories.Helpers
 {
-    public class AuthenticationHelper: IAuthenticationHelper
+    public class AuthenticationHelper : IAuthenticationHelper
     {
         private byte[] secretBytes;
 
@@ -15,7 +15,10 @@ namespace MexicanFood.Infrastructure.Data.Repositories.Helpers
         {
             secretBytes = secret;
         }
-        
+
+        /**
+         * Takes a string password and returns a byte[] passwordHash and a byte[] passwordSalt
+         */
         public void CreatePasswordHash(string password, out byte[] passwordHash, out byte[] passwordSalt)
         {
             using (var hmac = new System.Security.Cryptography.HMACSHA512())
@@ -25,6 +28,11 @@ namespace MexicanFood.Infrastructure.Data.Repositories.Helpers
             }
         }
 
+        /**
+         * Takes a string password, a byte[] storedSalt, and a byte[] storedHash, then decrypts
+         * the storedSalt and password, and checks if they match the storedHash, if they do
+         * returns true.
+         */
         public bool VerifyPasswordHash(string password, byte[] storedHash, byte[] storedSalt)
         {
             using (var hmac = new System.Security.Cryptography.HMACSHA512(storedSalt))
@@ -35,9 +43,14 @@ namespace MexicanFood.Infrastructure.Data.Repositories.Helpers
                     if (computedHash[i] != storedHash[i]) return false;
                 }
             }
+
             return true;
         }
 
+        /**
+         * Generates a token and assigns the role of administrator if the User requesting the
+         * Token has IsAdmin set to true.
+         */
         public string GenerateToken(User user)
         {
             var claims = new List<Claim>
@@ -55,8 +68,8 @@ namespace MexicanFood.Infrastructure.Data.Repositories.Helpers
                 new JwtPayload(null, // issuer - not needed (ValidateIssuer = false)
                     null, // audience - not needed (ValidateAudience = false)
                     claims.ToArray(),
-                    DateTime.Now,               // notBefore
-                    DateTime.Now.AddMinutes(10)));  // expires
+                    DateTime.Now, // notBefore
+                    DateTime.Now.AddMinutes(10))); // expires
 
             return new JwtSecurityTokenHandler().WriteToken(token);
         }

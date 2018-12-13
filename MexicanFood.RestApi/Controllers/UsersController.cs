@@ -15,6 +15,9 @@ namespace MexicanFood.RestApi.Controllers
             _userService = userService;
         }
 
+		/**
+		 * Returns the user from the database.
+		 */
         // GET api/user    
         [HttpGet]
 		public ActionResult<IEnumerable<string>> Get()

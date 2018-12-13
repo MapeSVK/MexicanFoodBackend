@@ -14,6 +14,10 @@ namespace MexicanFood.Core.ApplicationService.Implementation
 			_userRepository = userRepository;
 		}
 		
+		/**
+		 * Requests the repository to return the user from the
+		 * database.
+		 */
 		public List<User> GetUsers()
 		{
 			return _userRepository.ReadAll().ToList();

@@ -5,7 +5,7 @@ using System;
 
 namespace MexicanFood.Infrastructure.Data.Repositories
 {
-    public class DBInitializer: IDBInitializer
+    public class DBInitializer : IDBInitializer
     {
         private IAuthenticationHelper _authenticationHelper;
 
@@ -13,6 +13,7 @@ namespace MexicanFood.Infrastructure.Data.Repositories
         {
             _authenticationHelper = authenticationHelper;
         }
+
         public void SeedDb(MexicanFoodContext ctx)
         {
             var mealRepository = new MealRepository(ctx);
@@ -23,9 +24,9 @@ namespace MexicanFood.Infrastructure.Data.Repositories
                 Description = "description1",
                 Ingredients = "ingredient1",
                 Picture = "https://www.streetfoodesbjerg.dk/assets/La-bamba/9acea7d518/1__FitWzEyMDAsNzAwXQ.jpg",
-                 Price = 10
+                Price = 10
             }).Entity;
-            
+
             var meal2 = ctx.Meals.Add(new Meal()
             {
                 Name = "meal2",
@@ -48,15 +49,18 @@ namespace MexicanFood.Infrastructure.Data.Repositories
             });
 
             ctx.OrderLines.Add(new OrderLine
-            { Meal = meal2,
-            Order = order1
+            {
+                Meal = meal2,
+                Order = order1
             });
 
             string password = "password";
             byte[] passwordHashAdmin, passwordSAltAdmin;
-            _authenticationHelper.CreatePasswordHash(password, out passwordHashAdmin, out passwordSAltAdmin);
             
-            ctx.Users.Add(new User {
+            _authenticationHelper.CreatePasswordHash(password, out passwordHashAdmin, out passwordSAltAdmin);
+
+            ctx.Users.Add(new User
+            {
                 Username = "Admin",
                 PasswordHash = passwordHashAdmin,
                 PasswordSalt = passwordSAltAdmin,
