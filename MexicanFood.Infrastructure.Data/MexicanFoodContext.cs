@@ -10,14 +10,17 @@ namespace MexicanFood.Infrastructure.Data.Repositories
 
         protected override void OnModelCreating(ModelBuilder modelBuilder)
         {
+            //Creates a combined key with OrderId and MealId
             modelBuilder.Entity<OrderLine>()
                 .HasKey(ol => new { ol.OrderId, ol.MealId });
 
+            //Creates a binding between Order and OrderLines
             modelBuilder.Entity<OrderLine>()
                 .HasOne(ol => ol.Order)
                 .WithMany(o => o.OrderLines)
                 .HasForeignKey(ol => ol.OrderId);
 
+            //Creates a binding between Meal and OrderLines
             modelBuilder.Entity<OrderLine>()
                 .HasOne(ol => ol.Meal)
                 .WithMany(m => m.OrderLines)

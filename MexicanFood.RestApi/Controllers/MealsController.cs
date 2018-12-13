@@ -17,6 +17,9 @@ namespace MexicanFood.RestApi.Controllers
             _mealService = mealService;
         }
         
+        /**
+         * Returns a list of Meals.
+         */
         // GET api/meals
         [HttpGet]
         public ActionResult<List<Meal>> Get()
@@ -31,6 +34,11 @@ namespace MexicanFood.RestApi.Controllers
             }
         }
 
+        /**
+         * Takes an int id, checks that the id is greater then 0,
+         * if it is not, returns BadRequest. Otherwise requests the
+         * service for a Meal with the passed id.
+         */
         // GET api/meals/5
         [HttpGet("{id}")]
         public ActionResult<Meal> Get(int id)
@@ -41,6 +49,11 @@ namespace MexicanFood.RestApi.Controllers
             return Ok(_mealService.GetMealById(id));
         }
 
+        /**
+         * Requests the service to create the Meal created from the
+         * passed [FromBody].
+         * Returns the created Meal.
+         */
         // POST api/meals
         [HttpPost]
         public ActionResult<Meal> Post([FromBody] Meal meal)
@@ -55,6 +68,13 @@ namespace MexicanFood.RestApi.Controllers
             }
         }
 
+        /**
+         * Takes an int id and creates a Meal from the passed [FromBody],
+         * checks if the id or the created meals id are greater then 0, if either
+         * are not, returns BadRequest. otherwise requests the service to update
+         * the Meal created.
+         * Returns the Meal created.
+         */
         // PUT api/meals/5
         [HttpPut("{id}")]
         public ActionResult<Meal> Put(int id, [FromBody] Meal meal)
@@ -65,6 +85,10 @@ namespace MexicanFood.RestApi.Controllers
             return Ok(_mealService.UpdateMeal(id, meal));
         }
 
+        /**
+         * Takes an int id and requests the service to delete the specified meal.
+         * Returns the Meal to be deleted.
+         */
         // DELETE api/meals/5
         [HttpDelete("{id}")]
         public ActionResult<Meal> Delete(int id)

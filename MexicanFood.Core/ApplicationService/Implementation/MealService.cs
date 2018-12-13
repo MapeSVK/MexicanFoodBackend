@@ -15,16 +15,29 @@ namespace MexicanFood.Core.ApplicationService.Implementation
             _mealRepository = mealRepository;
         }
         
+        /**
+         * Calls the repository to return all meals and converts the IEnumerable to
+         * a list.
+         */
         public List<Meal> GetMeals()
         {
             return _mealRepository.ReadAll().ToList();
         }
 
+        /**
+         * Takes an int id and calls the repository to return a Meal with the
+         * specified id.
+         */
         public Meal GetMealById(int id)
         {
             return _mealRepository.ReadById(id);
         }
 
+        /**
+         * Checks if the Meal passed has a name, ingredients and a price, before
+         * passing it to the repository to be created in the database.
+         * Returns the Meal passed.
+         */
         public Meal CreateMeal(Meal meal)
         {
             if (string.IsNullOrEmpty(meal.Name))
@@ -41,6 +54,12 @@ namespace MexicanFood.Core.ApplicationService.Implementation
             return meal;
         }
 
+        /**
+         * Checks if the Meal passed has a name, ingredients and a price, before
+         * passing it to the repository to update the meal with the matching id
+         * of the passed Meal.
+         * Returns the Meal passed.
+         */
         public Meal UpdateMeal(int id, Meal mealUpdate)
         {
             if (string.IsNullOrEmpty(mealUpdate.Name))
@@ -55,6 +74,10 @@ namespace MexicanFood.Core.ApplicationService.Implementation
             return _mealRepository.UpdateEntity(mealUpdate);
         }
 
+        /**
+         * Takes an int id, returns the Meal with the specified id, and requests
+         * the repository to delete it.
+         */
         public Meal DeleteMeal(int id)
         {
             return _mealRepository.DeleteEntity(id);

@@ -12,6 +12,9 @@ namespace MexicanFood.Infrastructure.Data.Repositories
 			_ctx = ctx;
 		}
 		
+		/**
+		 * Returns the user in the database.
+		 */
 		public IEnumerable<User> ReadAll()
 		{
 			return _ctx.Users;

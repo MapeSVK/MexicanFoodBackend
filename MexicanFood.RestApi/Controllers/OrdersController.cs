@@ -17,6 +17,9 @@ namespace MexicanFood.RestApi.Controllers
             _orderService = orderService;
         }
 
+        /**
+         * Returns a list of Orders.
+         */
         // GET: api/Orders
         [HttpGet]
         public ActionResult<List<Order>> Get()
@@ -28,9 +31,14 @@ namespace MexicanFood.RestApi.Controllers
             catch (Exception e)
             {
                 return BadRequest(e.Message);
-            }         
+            }
         }
 
+        /**
+         * Takes an int id, checks that the id is greater then 0,
+         * if it is not, returns BadRequest. Otherwise requests the
+         * service for an Order with the passed id.
+         */
         // GET: api/Orders/5
         [HttpGet("{id}", Name = "Get")]
         public ActionResult<Order> Get(int id)
@@ -41,6 +49,11 @@ namespace MexicanFood.RestApi.Controllers
             return Ok(_orderService.GetOrderById(id));
         }
 
+        /**
+         * Requests the service to create the Order created from the
+         * passed [FromBody].
+         * Returns the created Order.
+         */
         // POST: api/Orders
         [HttpPost]
         public ActionResult<Order> Post([FromBody] Order order)
@@ -55,6 +68,13 @@ namespace MexicanFood.RestApi.Controllers
             }
         }
 
+        /**
+         * Takes an int id and creates an Order from the passed [FromBody],
+         * checks if the id or the created orders id are greater then 0, if either
+         * are not, returns BadRequest. otherwise requests the service to update
+         * the Order created.
+         * Returns the Order created.
+         */
         // PUT: api/Orders/5
         [HttpPut("{id}")]
         public ActionResult<Order> Put(int id, [FromBody] Order order)
@@ -62,16 +82,20 @@ namespace MexicanFood.RestApi.Controllers
             if (id < 1 || id != order.Id)
                 return BadRequest("Parameter id and order Id must be the same");
 
-            return Ok(_orderService.UpdateOrder(id, order));    
+            return Ok(_orderService.UpdateOrder(id, order));
         }
 
+        /**
+         * Takes an int id and requests the service to delete the specified order.
+         * Returns the Order to be deleted.
+         */
         // DELETE: api/ApiWithActions/5
         [HttpDelete("{id}")]
         public ActionResult<Order> Delete(int id)
-        { 
+        {
             var oDelete = _orderService.DeleteOrder(id);
 
-            return Ok($"Order with id {id} was deleted");   
+            return Ok($"Order with id {id} was deleted");
         }
     }
 }
