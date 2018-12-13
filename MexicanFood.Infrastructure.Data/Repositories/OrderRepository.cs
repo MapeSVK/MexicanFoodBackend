@@ -70,24 +70,24 @@ namespace MexicanFood.Infrastructure.Data.Repositories
                 //Clone orderlines to new location in memory, so they are not overridden on Attach
                 newOrderLines = new List<OrderLine>(orderUpdate.OrderLines);
             }
-            
-            //Attach order so basic properties are updated
-            _ctx.Attach(orderUpdate).State = EntityState.Modified;
-           
+
             //Remove all orderlines with updated order information
-            _ctx.OrderLines.RemoveRange(
+            _ctx.RemoveRange(
                 _ctx.OrderLines.Where(ol => ol.OrderId == orderUpdate.Id)
             );
-            
+
+            //Attach order so basic properties are updated
+            _ctx.Attach(orderUpdate).State = EntityState.Modified;
+
             //Add all orderlines with updated order information
             foreach (var ol in newOrderLines)
             {
-                _ctx.Entry(ol).State = EntityState.Added;
+                _ctx.Add(ol);
             }
 
             _ctx.SaveChanges();
 
-            return orderUpdate;       
+            return orderUpdate;
         }
 
         /**

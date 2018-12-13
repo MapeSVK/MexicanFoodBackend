@@ -62,25 +62,9 @@ namespace MexicanFood.Infrastructure.Data.Repositories
          */
         public Meal UpdateEntity(Meal mealUpdate)
         {
-            var newOrderLines = new List<OrderLine>();
-
-            if (mealUpdate.OrderLines != null)
-            {
-                //Clone orderlines to new location in memory, so they are not overridden on Attach
-                newOrderLines = new List<OrderLine>(mealUpdate.OrderLines);
-            }
 
             //Attach product so basic properties are updated
             _ctx.Attach(mealUpdate).State = EntityState.Modified;
-
-            //Remove all orderlines with updated order information
-            _ctx.OrderLines.RemoveRange(_ctx.OrderLines.Where(ol => ol.MealId == mealUpdate.Id));
-
-            //Add all orderlines with updated order information
-            foreach (var ol in newOrderLines)
-            {
-                _ctx.Entry(ol).State = EntityState.Added;
-            }
 
             _ctx.SaveChanges();
 
