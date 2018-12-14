@@ -22,7 +22,7 @@ namespace MexicanFood.RestApi.Controllers
          * Returns a list of Orders.
          */
         // GET: api/Orders
-        [Authorize]
+        [Authorize(Roles = "Administrator")]
         [HttpGet]
         public ActionResult<List<Order>> Get()
         {
