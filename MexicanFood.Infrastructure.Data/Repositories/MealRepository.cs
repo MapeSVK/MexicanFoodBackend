@@ -39,8 +39,7 @@ namespace MexicanFood.Infrastructure.Data.Repositories
 
         /**
          * Takes a Meal and attaches it to the local representation of the database,
-         * then saves the changes to the local database representation to the actual
-         * database.
+         * then saves the changes to the actual database.
          * Returns the Meal passed.
          */
         public Meal CreateEntity(Meal meal)

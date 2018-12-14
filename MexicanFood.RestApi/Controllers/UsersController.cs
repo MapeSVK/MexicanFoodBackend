@@ -31,30 +31,5 @@ namespace MexicanFood.RestApi.Controllers
                 return BadRequest(e.Message);
             }
         }
-
-		// GET api/user/5
-		[HttpGet("{id}")]
-		public ActionResult<string> Get(int id)
-		{
-			return "You cant get specific users";
-		}
-
-		// POST api/user
-		[HttpPost]
-		public void Post([FromBody] string value)
-		{
-		}
-
-		// PUT api/user/5
-		[HttpPut("{id}")]
-		public void Put(int id, [FromBody] string value)
-		{
-		}
-
-		// DELETE api/user/5
-		[HttpDelete("{id}")]
-		public void Delete(int id)
-		{
-		}
 	}
 }

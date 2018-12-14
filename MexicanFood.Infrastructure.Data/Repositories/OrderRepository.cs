@@ -18,8 +18,7 @@ namespace MexicanFood.Infrastructure.Data.Repositories
          * Returns the Orders in the database.
          */
         public IEnumerable<Order> ReadAll()
-        {
-            //Might need refactoring if filter is added etc
+        {          
             return _ctx.Orders
                 .Include(o => o.OrderLines)
                 .ThenInclude(ol => ol.Meal);
@@ -40,8 +39,7 @@ namespace MexicanFood.Infrastructure.Data.Repositories
 
         /**
          * Takes an Order and attaches it to the local representation of the database,
-         * then saves the changes to the local database representation to the actual
-         * database.
+         * then saves the changes to the actual database.
          * Returns the Order passed.
          */
         public Order CreateEntity(Order order)
