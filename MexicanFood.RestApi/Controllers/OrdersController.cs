@@ -58,7 +58,6 @@ namespace MexicanFood.RestApi.Controllers
          * Returns the created Order.
          */
         // POST: api/Orders
-        [Authorize(Roles = "Administrator")]
         [HttpPost]
         public ActionResult<Order> Post([FromBody] Order order)
         {
