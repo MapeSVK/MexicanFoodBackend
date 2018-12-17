@@ -22,7 +22,7 @@ namespace MexicanFood.RestApi.Controllers
          * Returns a list of Orders.
          */
         // GET: api/Orders
-        [Authorize(Roles = "Administrator")]
+        //[Authorize(Roles = "Administrator")]
         [HttpGet]
         public ActionResult<List<Order>> Get()
         {
@@ -94,7 +94,7 @@ namespace MexicanFood.RestApi.Controllers
          * Returns the Order to be deleted.
          */
         // DELETE: api/ApiWithActions/5
-        [Authorize(Roles = "Administrator")]
+        //[Authorize(Roles = "Administrator")]
         [HttpDelete("{id}")]
         public ActionResult<Order> Delete(int id)
         {
