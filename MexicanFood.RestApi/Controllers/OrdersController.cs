@@ -2,6 +2,7 @@
 using System.Collections.Generic;
 using MexicanFood.Core.ApplicationService;
 using MexicanFood.Core.Entities;
+using Microsoft.AspNetCore.Authorization;
 using Microsoft.AspNetCore.Mvc;
 
 namespace MexicanFood.RestApi.Controllers
@@ -21,6 +22,7 @@ namespace MexicanFood.RestApi.Controllers
          * Returns a list of Orders.
          */
         // GET: api/Orders
+        [Authorize(Roles = "Administrator")]
         [HttpGet]
         public ActionResult<List<Order>> Get()
         {
@@ -40,6 +42,7 @@ namespace MexicanFood.RestApi.Controllers
          * service for an Order with the passed id.
          */
         // GET: api/Orders/5
+        [Authorize(Roles = "Administrator")]
         [HttpGet("{id}", Name = "Get")]
         public ActionResult<Order> Get(int id)
         {
@@ -76,6 +79,7 @@ namespace MexicanFood.RestApi.Controllers
          * Returns the Order created.
          */
         // PUT: api/Orders/5
+        [Authorize(Roles = "Administrator")]
         [HttpPut("{id}")]
         public ActionResult<Order> Put(int id, [FromBody] Order order)
         {
@@ -90,6 +94,7 @@ namespace MexicanFood.RestApi.Controllers
          * Returns the Order to be deleted.
          */
         // DELETE: api/ApiWithActions/5
+        [Authorize(Roles = "Administrator")]
         [HttpDelete("{id}")]
         public ActionResult<Order> Delete(int id)
         {

@@ -18,8 +18,7 @@ namespace MexicanFood.Infrastructure.Data.Repositories
          * Returns the Orders in the database.
          */
         public IEnumerable<Order> ReadAll()
-        {
-            //Might need refactoring if filter is added etc
+        {          
             return _ctx.Orders
                 .Include(o => o.OrderLines)
                 .ThenInclude(ol => ol.Meal);
@@ -40,8 +39,7 @@ namespace MexicanFood.Infrastructure.Data.Repositories
 
         /**
          * Takes an Order and attaches it to the local representation of the database,
-         * then saves the changes to the local database representation to the actual
-         * database.
+         * then saves the changes to the actual database.
          * Returns the Order passed.
          */
         public Order CreateEntity(Order order)
@@ -56,9 +54,8 @@ namespace MexicanFood.Infrastructure.Data.Repositories
          * update the local representation of the order, the Order passed represented,
          * with the new data, then save the changes to the real database.
          * If OrderLines is not null, the method makes a copy of the OrderLines,
-         * removes the OrderLines matching the Orders id, and adds the copied entries
-         * to the local representation, then saves changes to the actual database.
-         * Returns the Order passed.
+         * removes the OrderLines matching the Orders id, updates the order with the
+         * new information in the Order passed, then re-adds the OrderLines that were removed.
          * (The removal and adding is to avoid problems with the updated meals relations)
          */
         public Order UpdateEntity(Order orderUpdate)

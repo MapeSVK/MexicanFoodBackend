@@ -92,7 +92,8 @@ namespace MexicanFood.RestApi
 			
 			services.AddMvc().AddJsonOptions(options => {
 				options.SerializerSettings.ReferenceLoopHandling = ReferenceLoopHandling.Ignore;
-			});
+                options.SerializerSettings.MaxDepth = 3;
+            });
 			
 			services.AddMvc().SetCompatibilityVersion(CompatibilityVersion.Version_2_1);
 		}

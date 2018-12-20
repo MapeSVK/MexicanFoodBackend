@@ -2,6 +2,7 @@ using System;
 using System.Collections.Generic;
 using MexicanFood.Core.ApplicationService;
 using MexicanFood.Entities;
+using Microsoft.AspNetCore.Authorization;
 using Microsoft.AspNetCore.Mvc;
 
 namespace MexicanFood.RestApi.Controllers
@@ -55,6 +56,7 @@ namespace MexicanFood.RestApi.Controllers
          * Returns the created Meal.
          */
         // POST api/meals
+        [Authorize(Roles = "Administrator")]
         [HttpPost]
         public ActionResult<Meal> Post([FromBody] Meal meal)
         {
@@ -76,6 +78,7 @@ namespace MexicanFood.RestApi.Controllers
          * Returns the Meal created.
          */
         // PUT api/meals/5
+        [Authorize(Roles = "Administrator")]
         [HttpPut("{id}")]
         public ActionResult<Meal> Put(int id, [FromBody] Meal meal)
         {
@@ -90,6 +93,7 @@ namespace MexicanFood.RestApi.Controllers
          * Returns the Meal to be deleted.
          */
         // DELETE api/meals/5
+        [Authorize(Roles = "Administrator")]
         [HttpDelete("{id}")]
         public ActionResult<Meal> Delete(int id)
         { 

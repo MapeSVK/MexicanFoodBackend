@@ -38,7 +38,7 @@ namespace MexicanFood.Core.ApplicationService.Implementation
         }
 
         /**
-        * Takes an int id, and requests an Order with the specified specified id, from
+        * Takes an int id, and requests an Order with the specified id, from
         * the repository, and returns it.
         */
         public Order GetOrderById(int id)
