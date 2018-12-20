@@ -63,7 +63,7 @@ namespace MexicanFood.RestApi
 			{
 				options.AddPolicy("AllowSpecificOrigin",
 					builder => builder
-						.AllowAnyOrigin().AllowAnyHeader().AllowAnyMethod()
+						.WithOrigins("https://mexicanfood-c90aa.firebaseapp.com").AllowAnyHeader().AllowAnyMethod()	
 				);
 			});
 			
