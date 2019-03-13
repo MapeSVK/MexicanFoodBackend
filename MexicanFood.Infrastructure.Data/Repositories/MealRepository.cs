@@ -54,14 +54,11 @@ namespace MexicanFood.Infrastructure.Data.Repositories
          * the changes to the actual database.
          * Returns the Meal passed.
          */
+
         public Meal UpdateEntity(Meal mealUpdate)
         {
-
-            //Attach product so basic properties are updated
             _ctx.Attach(mealUpdate).State = EntityState.Modified;
-
             _ctx.SaveChanges();
-
             return mealUpdate;
         }
 

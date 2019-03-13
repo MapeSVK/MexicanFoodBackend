@@ -60,6 +60,7 @@ namespace MexicanFood.Core.ApplicationService.Implementation
          * of the passed Meal.
          * Returns the Meal passed.
          */
+
         public Meal UpdateMeal(int id, Meal mealUpdate)
         {
             if (string.IsNullOrEmpty(mealUpdate.Name))

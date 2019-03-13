@@ -116,7 +116,6 @@ namespace MexicanFood.RestApi
 			}
 			else
 			{
-				
                 using (var scope = app.ApplicationServices.CreateScope())
                 {
                     var ctx = scope.ServiceProvider.GetService<MexicanFoodContext>();
@@ -125,7 +124,6 @@ namespace MexicanFood.RestApi
 	                //dbInitializer.SeedDb(ctx);
 	                
                 }
-
 				app.UseHsts();
 			}
 

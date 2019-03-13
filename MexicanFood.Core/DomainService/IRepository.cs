@@ -15,5 +15,7 @@ namespace MexicanFood.Core.DomainService
         T UpdateEntity(T entity);
 
         T DeleteEntity(int id);
+
+
     }
 }

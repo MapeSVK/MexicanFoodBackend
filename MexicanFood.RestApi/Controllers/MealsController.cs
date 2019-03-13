@@ -78,6 +78,7 @@ namespace MexicanFood.RestApi.Controllers
          * Returns the Meal created.
          */
         // PUT api/meals/5
+
         [Authorize(Roles = "Administrator")]
         [HttpPut("{id}")]
         public ActionResult<Meal> Put(int id, [FromBody] Meal meal)
